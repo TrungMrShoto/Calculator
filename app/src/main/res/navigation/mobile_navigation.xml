@@ -3,41 +3,47 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
-    app:startDestination="@+id/nav_home">
+    app:startDestination="@+id/nav_standard">
 
     <fragment
-        android:id="@+id/nav_home"
-        android:name="com.trongtrung.calculator.ui.home.HomeFragment"
-        android:label="@string/menu_home"
-        tools:layout="@layout/fragment_home" />
+        android:id="@+id/nav_standard"
+        android:name="com.trongtrung.calculator.ui.standard.StandardFragment"
+        android:label="@string/menu_standard"
+        tools:layout="@layout/fragment_standard" />
 
     <fragment
-        android:id="@+id/nav_gallery"
-        android:name="com.trongtrung.calculator.ui.gallery.GalleryFragment"
-        android:label="@string/menu_gallery"
-        tools:layout="@layout/fragment_gallery" />
+        android:id="@+id/nav_programmer"
+        android:name="com.trongtrung.calculator.ui.programmer.ProgrammerFragment"
+        android:label="@string/menu_programmer"
+        tools:layout="@layout/fragment_programmer" />
 
     <fragment
-        android:id="@+id/nav_slideshow"
-        android:name="com.trongtrung.calculator.ui.slideshow.SlideshowFragment"
-        android:label="@string/menu_slideshow"
-        tools:layout="@layout/fragment_slideshow" />
+        android:id="@+id/nav_length"
+        android:name="com.trongtrung.calculator.ui.length.LengthFragment"
+        android:label="@string/menu_length"
+        tools:layout="@layout/fragment_length" />
 
     <fragment
-        android:id="@+id/nav_tools"
-        android:name="com.trongtrung.calculator.ui.tools.ToolsFragment"
-        android:label="@string/menu_tools"
-        tools:layout="@layout/fragment_tools" />
+        android:id="@+id/nav_weight"
+        android:name="com.trongtrung.calculator.ui.weight.WeightFragment"
+        android:label="@string/menu_weight"
+        tools:layout="@layout/fragment_weight" />
 
     <fragment
-        android:id="@+id/nav_share"
-        android:name="com.trongtrung.calculator.ui.share.ShareFragment"
-        android:label="@string/menu_share"
-        tools:layout="@layout/fragment_share" />
+        android:id="@+id/nav_temp"
+        android:name="com.trongtrung.calculator.ui.temp.TemperatureFragment"
+        android:label="@string/menu_temp"
+        tools:layout="@layout/fragment_temp" />
 
     <fragment
-        android:id="@+id/nav_send"
-        android:name="com.trongtrung.calculator.ui.send.SendFragment"
-        android:label="@string/menu_send"
-        tools:layout="@layout/fragment_send" />
+        android:id="@+id/nav_speed"
+        android:name="com.trongtrung.calculator.ui.speed.SpeedFragment"
+        android:label="@string/menu_speed"
+        tools:layout="@layout/fragment_speed" />
+
+    <fragment
+        android:id="@+id/nav_about"
+        android:name="com.trongtrung.calculator.ui.about.AboutFragment"
+        android:label="@string/menu_about"
+        tools:layout="@layout/fragment_about" />
 </navigation>

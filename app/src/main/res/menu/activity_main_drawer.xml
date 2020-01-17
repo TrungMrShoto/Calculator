@@ -3,36 +3,53 @@
     xmlns:tools="http://schemas.android.com/tools"
     tools:showIn="navigation_view">
 
-    <group android:checkableBehavior="single">
-        <item
-            android:id="@+id/nav_home"
-            android:icon="@drawable/ic_menu_camera"
-            android:title="@string/menu_home" />
-        <item
-            android:id="@+id/nav_gallery"
-            android:icon="@drawable/ic_menu_gallery"
-            android:title="@string/menu_gallery" />
-        <item
-            android:id="@+id/nav_slideshow"
-            android:icon="@drawable/ic_menu_slideshow"
-            android:title="@string/menu_slideshow" />
-        <item
-            android:id="@+id/nav_tools"
-            android:icon="@drawable/ic_menu_manage"
-            android:title="@string/menu_tools" />
-    </group>
-
-    <item android:title="Communicate">
+    <item android:title="@string/app_name">
         <menu>
             <item
-                android:id="@+id/nav_share"
-                android:icon="@drawable/ic_menu_share"
-                android:title="@string/menu_share" />
+                android:id="@+id/nav_standard"
+                android:icon="@drawable/ic_calculator"
+                android:title="@string/menu_standard" />
             <item
-                android:id="@+id/nav_send"
-                android:icon="@drawable/ic_menu_send"
-                android:title="@string/menu_send" />
+                android:id="@+id/nav_programmer"
+                android:icon="@drawable/ic_code"
+                android:title="@string/menu_programmer" />
         </menu>
     </item>
 
+
+    <item android:title="Converter"
+        >
+        <menu>
+            <item
+                android:id="@+id/nav_length"
+                android:icon="@drawable/ic_ruler"
+                android:title="@string/menu_length" />
+
+            <item
+                android:id="@+id/nav_weight"
+                android:icon="@drawable/ic_weight"
+                android:title="@string/menu_weight" />
+
+            <item
+                android:id="@+id/nav_temp"
+                android:icon="@drawable/ic_weather"
+                android:title="@string/menu_temp" />
+
+            <item
+                android:id="@+id/nav_speed"
+                android:icon="@drawable/ic_speed"
+                android:title="@string/menu_speed" />
+        </menu>
+
+    </item>
+
+    <item
+            android:id="@+id/nav_about"
+            android:title="@string/menu_about"
+            android:icon="@drawable/ic_info" />
+
+
+<!--    <group android:checkableBehavior="single">-->
+
+<!--    </group>-->
 </menu>
