@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">Calculator</string>
     <string name="nav_header_title">Calculator</string>
-    <string name="nav_header_subtitle">A product is built by Trong Trung</string>
+    <string name="nav_header_subtitle">A product is built by Trung Nguyen</string>
 
 
     <string name="nav_header_desc">Calculator</string>
@@ -16,4 +16,9 @@
     <string name="menu_temp">Temperature</string>
     <string name="menu_speed">Speed</string>
     <string name="menu_about">About</string>
+
+    <string name="author">Trung Nguyen</string>
+    <string name="email">trung.nguyen.shotokun@gmail.com</string>
+    <string name="author_text">Hope you enjoy my application!</string>
+
 </resources>

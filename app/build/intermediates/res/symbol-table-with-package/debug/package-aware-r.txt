@@ -822,6 +822,7 @@ dimen abc_text_size_subhead_material
 dimen abc_text_size_subtitle_material_toolbar
 dimen abc_text_size_title_material
 dimen abc_text_size_title_material_toolbar
+dimen author_name_size
 dimen cardview_compat_inset_shadow
 dimen cardview_default_elevation
 dimen cardview_default_radius
@@ -959,6 +960,7 @@ dimen subtitle_corner_radius
 dimen subtitle_outline_width
 dimen subtitle_shadow_offset
 dimen subtitle_shadow_radius
+dimen title_size
 dimen tooltip_corner_radius
 dimen tooltip_horizontal_padding
 dimen tooltip_margin
@@ -1053,6 +1055,7 @@ drawable abc_textfield_search_activated_mtrl_alpha
 drawable abc_textfield_search_default_mtrl_alpha
 drawable abc_textfield_search_material
 drawable abc_vector_test
+drawable author_picture
 drawable avd_hide_password
 drawable avd_show_password
 drawable background_circle
@@ -1074,9 +1077,11 @@ drawable design_snackbar_background
 drawable ic_calculator
 drawable ic_code
 drawable ic_info
+drawable ic_left_quote
 drawable ic_mtrl_chip_checked_black
 drawable ic_mtrl_chip_checked_circle
 drawable ic_mtrl_chip_close_circle
+drawable ic_right_quote
 drawable ic_ruler
 drawable ic_speed
 drawable ic_weather
@@ -1099,6 +1104,7 @@ drawable notify_panel_notification_icon_bg
 drawable side_nav_bar
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
+drawable wall
 id ALT
 id CTRL
 id FUNCTION
@@ -1163,6 +1169,10 @@ id alertTitle
 id all
 id always
 id async
+id author
+id author_email
+id author_photo
+id author_quote
 id auto
 id barrier
 id beginning
@@ -1224,6 +1234,7 @@ id ifRoom
 id image
 id imageView
 id imageView2
+id imageView3
 id info
 id invisible
 id italic
@@ -1334,7 +1345,6 @@ id text2
 id textSpacerNoButtons
 id textSpacerNoTitle
 id textStart
-id text_about
 id text_input_password_toggle
 id text_length
 id text_programmer
@@ -1500,10 +1510,13 @@ string abc_shareactionprovider_share_with_application
 string abc_toolbar_collapse_description
 string app_name
 string appbar_scrolling_view_behavior
+string author
+string author_text
 string bottom_sheet_behavior
 string character_counter_content_description
 string character_counter_pattern
 string converter
+string email
 string fab_transformation_scrim_behavior
 string fab_transformation_sheet_behavior
 string hide_bottom_view_on_scroll_behavior
