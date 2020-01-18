@@ -1,6 +1,6 @@
-# Calculator
+# Calculator Application
 ### Introduction
-Calculator is my application about the mathematical field. This app helps everyone to compute the expression. It also has a programmer calculator to convert a number in decimal into a number in heximal,... And it has a tool for convert unit.
+Calculator is my application about the mathematical field. This app helps everyone to compute the expression. It also has a programmer calculator to convert a number in decimal into a number in heximal,... And it has a tool for convert a unit.
 ### Contact
 If you want to exchange some problem about my app or the code, feel free to contact me at :
 
