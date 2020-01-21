@@ -96,6 +96,10 @@
         "source": "C:\\Users\\dell\\.gradle\\caches\\transforms-2\\files-2.1\\d74b5b498b35fd5cb32d0a6997bb1d3d\\appcompat-1.1.0\\res\\drawable-xxhdpi-v4\\abc_ic_star_half_black_16dp.png"
     },
     {
+        "merged": "D:\\App_Android\\Calculator\\app\\build\\intermediates\\res\\merged\\debug\\layout-land_fragment_about.xml.flat",
+        "source": "D:\\App_Android\\Calculator\\app\\src\\main\\res\\layout-land\\fragment_about.xml"
+    },
+    {
         "merged": "D:\\App_Android\\Calculator\\app\\build\\intermediates\\res\\merged\\debug\\layout_design_navigation_menu_item.xml.flat",
         "source": "C:\\Users\\dell\\.gradle\\caches\\transforms-2\\files-2.1\\2946ca0ea6c89dab7d7d9fbc18e54292\\material-1.0.0\\res\\layout\\design_navigation_menu_item.xml"
     },
@@ -548,6 +552,10 @@
         "source": "C:\\Users\\dell\\.gradle\\caches\\transforms-2\\files-2.1\\f01b27bb220ecb79298884ef36a7a2fb\\core-1.1.0\\res\\drawable-mdpi-v4\\notification_bg_low_normal.9.png"
     },
     {
+        "merged": "D:\\App_Android\\Calculator\\app\\build\\intermediates\\res\\merged\\debug\\layout_key_layout.xml.flat",
+        "source": "D:\\App_Android\\Calculator\\app\\src\\main\\res\\layout\\key_layout.xml"
+    },
+    {
         "merged": "D:\\App_Android\\Calculator\\app\\build\\intermediates\\res\\merged\\debug\\color-v23_abc_tint_btn_checkable.xml.flat",
         "source": "C:\\Users\\dell\\.gradle\\caches\\transforms-2\\files-2.1\\d74b5b498b35fd5cb32d0a6997bb1d3d\\appcompat-1.1.0\\res\\color-v23\\abc_tint_btn_checkable.xml"
     },
@@ -964,6 +972,10 @@
         "source": "C:\\Users\\dell\\.gradle\\caches\\transforms-2\\files-2.1\\d74b5b498b35fd5cb32d0a6997bb1d3d\\appcompat-1.1.0\\res\\layout\\abc_list_menu_item_layout.xml"
     },
     {
+        "merged": "D:\\App_Android\\Calculator\\app\\build\\intermediates\\res\\merged\\debug\\layout-land_fragment_length.xml.flat",
+        "source": "D:\\App_Android\\Calculator\\app\\src\\main\\res\\layout-land\\fragment_length.xml"
+    },
+    {
         "merged": "D:\\App_Android\\Calculator\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_textfield_search_activated_mtrl_alpha.9.png.flat",
         "source": "C:\\Users\\dell\\.gradle\\caches\\transforms-2\\files-2.1\\d74b5b498b35fd5cb32d0a6997bb1d3d\\appcompat-1.1.0\\res\\drawable-xhdpi-v4\\abc_textfield_search_activated_mtrl_alpha.9.png"
     },
@@ -1280,6 +1292,10 @@
         "source": "C:\\Users\\dell\\.gradle\\caches\\transforms-2\\files-2.1\\d74b5b498b35fd5cb32d0a6997bb1d3d\\appcompat-1.1.0\\res\\drawable-hdpi-v4\\abc_ic_star_black_16dp.png"
     },
     {
+        "merged": "D:\\App_Android\\Calculator\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_refresh.xml.flat",
+        "source": "D:\\App_Android\\Calculator\\app\\src\\main\\res\\drawable\\ic_refresh.xml"
+    },
+    {
         "merged": "D:\\App_Android\\Calculator\\app\\build\\intermediates\\res\\merged\\debug\\layout_app_bar_main.xml.flat",
         "source": "D:\\App_Android\\Calculator\\app\\src\\main\\res\\layout\\app_bar_main.xml"
     },
@@ -1318,6 +1334,10 @@
     {
         "merged": "D:\\App_Android\\Calculator\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_textfield_default_mtrl_alpha.9.png.flat",
         "source": "C:\\Users\\dell\\.gradle\\caches\\transforms-2\\files-2.1\\d74b5b498b35fd5cb32d0a6997bb1d3d\\appcompat-1.1.0\\res\\drawable-mdpi-v4\\abc_textfield_default_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "D:\\App_Android\\Calculator\\app\\build\\intermediates\\res\\merged\\debug\\drawable_wall_vertical.jpg.flat",
+        "source": "D:\\App_Android\\Calculator\\app\\src\\main\\res\\drawable\\wall_vertical.jpg"
     },
     {
         "merged": "D:\\App_Android\\Calculator\\app\\build\\intermediates\\res\\merged\\debug\\interpolator-v21_mtrl_fast_out_slow_in.xml.flat",
@@ -1362,6 +1382,10 @@
     {
         "merged": "D:\\App_Android\\Calculator\\app\\build\\intermediates\\res\\merged\\debug\\layout_abc_search_dropdown_item_icons_2line.xml.flat",
         "source": "C:\\Users\\dell\\.gradle\\caches\\transforms-2\\files-2.1\\d74b5b498b35fd5cb32d0a6997bb1d3d\\appcompat-1.1.0\\res\\layout\\abc_search_dropdown_item_icons_2line.xml"
+    },
+    {
+        "merged": "D:\\App_Android\\Calculator\\app\\build\\intermediates\\res\\merged\\debug\\layout-land_activity_main.xml.flat",
+        "source": "D:\\App_Android\\Calculator\\app\\src\\main\\res\\layout-land\\activity_main.xml"
     },
     {
         "merged": "D:\\App_Android\\Calculator\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_scrubber_track_mtrl_alpha.9.png.flat",

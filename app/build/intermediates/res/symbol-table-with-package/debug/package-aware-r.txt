@@ -41,6 +41,10 @@ animator mtrl_fab_hide_motion_spec
 animator mtrl_fab_show_motion_spec
 animator mtrl_fab_transformation_sheet_collapse_spec
 animator mtrl_fab_transformation_sheet_expand_spec
+array array_length_unit
+array array_speed_unit
+array array_temperature_unit
+array array_weight_unit
 attr action
 attr actionBarDivider
 attr actionBarItemBackground
@@ -1081,6 +1085,7 @@ drawable ic_left_quote
 drawable ic_mtrl_chip_checked_black
 drawable ic_mtrl_chip_checked_circle
 drawable ic_mtrl_chip_close_circle
+drawable ic_refresh
 drawable ic_right_quote
 drawable ic_ruler
 drawable ic_speed
@@ -1105,6 +1110,7 @@ drawable side_nav_bar
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
 drawable wall
+drawable wall_vertical
 id ALT
 id CTRL
 id FUNCTION
@@ -1184,6 +1190,7 @@ id center
 id center_horizontal
 id center_vertical
 id chains
+id character
 id checkbox
 id checked
 id chronometer
@@ -1213,6 +1220,8 @@ id end
 id end_padder
 id enterAlways
 id enterAlwaysCollapsed
+id exchangeSpeedUnit
+id exchangeUnit
 id exitUntilCollapsed
 id expand_activities_button
 id expanded_menu
@@ -1226,6 +1235,7 @@ id ghost_view
 id gone
 id group_divider
 id groups
+id guideline
 id home
 id homeAsUp
 id icon
@@ -1236,12 +1246,17 @@ id imageView
 id imageView2
 id imageView3
 id info
+id input_length
+id input_length_unit
+id input_speed
+id input_speed_unit
 id invisible
 id italic
 id item_touch_helper_previous_elevation
 id labeled
 id largeLabel
 id left
+id length_keyboard
 id line1
 id line3
 id listMode
@@ -1275,6 +1290,10 @@ id notification_main_column_container
 id off
 id on
 id outline
+id output_length
+id output_length_unit
+id output_speed
+id output_speed_unit
 id packed
 id parallax
 id parent
@@ -1319,6 +1338,7 @@ id snackbar_text
 id snap
 id snapMargins
 id spacer
+id speed_keyboard
 id split_action_bar
 id spread
 id spread_inside
@@ -1346,9 +1366,7 @@ id textSpacerNoButtons
 id textSpacerNoTitle
 id textStart
 id text_input_password_toggle
-id text_length
 id text_programmer
-id text_speed
 id text_standard
 id text_temp
 id text_weight
@@ -1458,6 +1476,7 @@ layout fragment_standard
 layout fragment_temp
 layout fragment_weight
 layout header_main
+layout key_layout
 layout mtrl_layout_snackbar
 layout mtrl_layout_snackbar_include
 layout notification_action

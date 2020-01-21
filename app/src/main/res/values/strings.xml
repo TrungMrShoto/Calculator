@@ -21,4 +21,45 @@
     <string name="email">trung.nguyen.shotokun@gmail.com</string>
     <string name="author_text">Hope you enjoy my application!</string>
 
+<!--    array for length unit-->
+    <string-array name="array_length_unit">
+        <item>Nanometers (nm)</item>
+        <item>Micrometers (μm)</item>
+        <item>Millimeters (mm)</item>
+        <item>Centimeters (cm)</item>
+        <item>Meters (m)</item>
+        <item>Kilometers (km)</item>
+        <item>Nautical Miles (nmi)</item>
+        <item>Inches (in)</item>
+        <item>Feet (ft)</item>
+        <item>Yards (yd)</item>
+        <item>Miles (mi)</item>
+    </string-array>
+
+<!--    array for weight unit-->
+    <string-array name="array_weight_unit">
+        <item>Milligrams (mg)</item>
+        <item>Grams (g)</item>
+        <item>Kilogram (kg)</item>
+        <item>Metric tonnes (t)</item>
+        <item>Ounces (oz)</item>
+        <item>Pounds (lb)</item>
+        <item>Stones (st)</item>
+    </string-array>
+
+<!--    array for speed unit-->
+    <string-array name="array_speed_unit">
+        <item>Meters per second (m/s)</item>
+        <item>Kilometers per hour (km/h)</item>
+        <item>Nautical Miles per hour (knot)</item>
+        <item>Miles per hour (mph)</item>
+        <item>Feet per second (ft/s)</item>
+    </string-array>
+
+<!--    array for temperature unit-->
+    <string-array name="array_temperature_unit">
+        <item>Celsius (C)</item>
+        <item>Fahrenheit (F)</item>
+        <item>Kelvin (K)</item>
+    </string-array>
 </resources>
