@@ -25,13 +25,13 @@
 
     <fragment
         android:id="@+id/nav_weight"
-        android:name="com.trongtrung.calculator.ui.weight.WeightFragment"
+        android:name="com.trongtrung.calculator.ui.WeightFragment"
         android:label="@string/menu_weight"
         tools:layout="@layout/fragment_weight" />
 
     <fragment
         android:id="@+id/nav_temp"
-        android:name="com.trongtrung.calculator.ui.temp.TemperatureFragment"
+        android:name="com.trongtrung.calculator.ui.TemperatureFragment"
         android:label="@string/menu_temp"
         tools:layout="@layout/fragment_temp" />
 

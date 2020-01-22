@@ -43,4 +43,7 @@ public class Unit {
 
     public static final double HOUR_TO_SECOND = 3600;
     public static final int PRECISION = 10;
+
+    public static final double CELSIUS_MIN = -273.15;
+    public static final double FAHRENHEIT_MIN = -459.67;
 }

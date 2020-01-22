@@ -38,6 +38,9 @@ public class SpeedFragment extends Fragment {
     private View root;
     private Converter converter;
     private ImageButton exchange;
+    private static String inputDefault ="0";
+    private static int inputUnit = 0;
+    private static int outputUnit = 0;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
@@ -47,24 +50,25 @@ public class SpeedFragment extends Fragment {
         initialize();
         createSpinner();
         createKeyboard();
-
+        listSpeedUnitOutput.setSelection(inputUnit);
+        listSpeedUnitInput.setSelection(outputUnit);
+        updateResult(inputDefault);
 
         keyboard.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 String character = (String) keyboard.getItemAtPosition(position);
                 String input = inputField.getText().toString();
+                String inputValue;
                 int numOfDigit = 0;
+
                 //check zero
-                if (input.equals("0")) {
+                if (input.equals("0") || input.equals("-0")) {
                     inputField.setText("");
                 }
 
                 if (input.contains(GeneralCharacter.POINT))
                     numOfDigit+=1;
-
-
-                String inputValue;
 
                 switch (character){
                     case GeneralCharacter.SPACE:
@@ -74,24 +78,33 @@ public class SpeedFragment extends Fragment {
                         input = "0";
                         break;
                     case GeneralCharacter.DEL:
-                        if (input.length() > 1) input = input.substring(0,input.length()-1);
-                        else
-                            input = "0";
+                        input = getStringAfterDeleting(input);
                         inputValue= input;
+                        break;
+                    case GeneralCharacter.ADD_AND_SUB:
+                        if (input.charAt(0) == '-')
+                            inputValue = input.substring(1);
+                        else
+                            inputValue = "-" + input;
                         break;
                     case GeneralCharacter.POINT:
                         if (input.contains(GeneralCharacter.POINT))
                             return;
-                        if (input.equals("0")) {
+                        if (input.equals("0") || input.equals("-0")) {
                             inputValue = input + character;
                             break;
                         }
                     default:
                         if (input.equals("0"))
                             input = "";
+                        else if (input.equals("-0"))
+                            input = "-";
                         inputValue = input + character;
                         break;
                 }
+
+                if (inputValue.contains("-"))
+                    numOfDigit+=1;
                 if (input.length()-numOfDigit >= Unit.PRECISION)
                     return;
 
@@ -148,7 +161,7 @@ public class SpeedFragment extends Fragment {
     private void initialize()
     {
         converter = new SpeedConverter();
-        exchange = root.findViewById(R.id.exchangeSpeedUnit);
+        exchange = root.findViewById(R.id.exchangeUnit);
         listSpeedUnitInput = root.findViewById(R.id.input_speed_unit);
         listSpeedUnitOutput = root.findViewById(R.id.output_speed_unit);
         keyboard = root.findViewById(R.id.speed_keyboard);
@@ -170,8 +183,12 @@ public class SpeedFragment extends Fragment {
         double result = converter.convert(Double.parseDouble(inputValue),
                 listSpeedUnitInput.getSelectedItemPosition(),
                 listSpeedUnitOutput.getSelectedItemPosition());
+        inputDefault = inputValue;
         inputField.setText(inputValue);
         outputField.setText(formatOutput(result));
+
+        inputUnit = listSpeedUnitInput.getSelectedItemPosition();
+        outputUnit = listSpeedUnitOutput.getSelectedItemPosition();
     }
 
 
@@ -182,5 +199,23 @@ public class SpeedFragment extends Fragment {
         keyboard.setAdapter(adapter);
     }
 
+    private String getStringAfterDeleting(String input)
+    {
+        if (input.charAt(0) == '-') {
+            if (input.equals("-0"))
+                input = "0";
+            else if (input.length() > 2)
+                input = input.substring(0, input.length() - 1);
+            else
+                input = "-0";
+        }
+        else
+        {
+            if (input.length() > 1) input = input.substring(0,input.length()-1);
+            else
+                input = "0";
+        }
 
+        return input;
+    }
 }

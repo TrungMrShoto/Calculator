@@ -10,7 +10,6 @@
     <string name="menu_programmer">Programmer</string>
 
 
-    <string name="converter">Converter</string>
     <string name="menu_length">Length</string>
     <string name="menu_weight">Weight and Mass</string>
     <string name="menu_temp">Temperature</string>
@@ -36,7 +35,7 @@
         <item>Miles (mi)</item>
     </string-array>
 
-<!--    array for weight unit-->
+    <!--    array for weight unit-->
     <string-array name="array_weight_unit">
         <item>Milligrams (mg)</item>
         <item>Grams (g)</item>
@@ -47,7 +46,7 @@
         <item>Stones (st)</item>
     </string-array>
 
-<!--    array for speed unit-->
+    <!--    array for speed unit-->
     <string-array name="array_speed_unit">
         <item>Meters per second (m/s)</item>
         <item>Kilometers per hour (km/h)</item>
@@ -56,10 +55,11 @@
         <item>Feet per second (ft/s)</item>
     </string-array>
 
-<!--    array for temperature unit-->
+    <!--    array for temperature unit-->
     <string-array name="array_temperature_unit">
-        <item>Celsius (C)</item>
-        <item>Fahrenheit (F)</item>
+        <item>Celsius (°C)</item>
+        <item>Fahrenheit (°F)</item>
         <item>Kelvin (K)</item>
     </string-array>
+
 </resources>
