@@ -62,4 +62,23 @@
         <item>Kelvin (K)</item>
     </string-array>
 
+    <!--    array for bitwise-->
+    <string-array name="bitwise">
+        <item>NOT</item>
+        <item>AND</item>
+        <item>OR</item>
+        <item>XOR</item>
+        <item>XNOR</item>
+        <item>NAND</item>
+        <item>NOR</item>
+    </string-array>
+
+    <!--    array for bit shift-->
+    <string-array name="bit_shift">
+        <item>Arithmetic shift</item>
+        <item>Logical shift</item>
+        <item>Circular shift</item>
+        <item>Rotate through carry</item>
+    </string-array>
+
 </resources>

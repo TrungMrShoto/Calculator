@@ -11,18 +11,14 @@ import android.widget.ImageButton;
 import android.widget.Spinner;
 import android.widget.TextView;
 
-import androidx.annotation.Nullable;
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
-import androidx.lifecycle.Observer;
-import androidx.lifecycle.ViewModelProviders;
 
 import com.trongtrung.calculator.GeneralArray;
 import com.trongtrung.calculator.GeneralCharacter;
 import com.trongtrung.calculator.KeyboardAdapter;
 import com.trongtrung.calculator.R;
 import com.trongtrung.calculator.converter.Converter;
-import com.trongtrung.calculator.converter.LengthConverter;
 import com.trongtrung.calculator.converter.SpeedConverter;
 import com.trongtrung.calculator.converter.Unit;
 
@@ -34,7 +30,6 @@ public class SpeedFragment extends Fragment {
     private Spinner listSpeedUnitInput, listSpeedUnitOutput;
     private GridView keyboard;
     private TextView inputField, outputField;
-    private GeneralArray array_keyboard;
     private View root;
     private Converter converter;
     private ImageButton exchange;
@@ -194,8 +189,7 @@ public class SpeedFragment extends Fragment {
 
     private void createKeyboard()
     {
-        array_keyboard = new GeneralArray();
-        KeyboardAdapter adapter = new KeyboardAdapter(getActivity(), array_keyboard.getListOfConverterNoSub(),R.layout.key_layout);
+        KeyboardAdapter adapter = new KeyboardAdapter(getActivity(), GeneralArray.getListOfConverterNoSub(),R.layout.key_layout);
         keyboard.setAdapter(adapter);
     }
 

@@ -192,8 +192,7 @@ public class WeightFragment extends Fragment {
 
     private void createKeyboardVertical()
     {
-        GeneralArray array_keyboard = new GeneralArray();
-        KeyboardAdapter adapter = new KeyboardAdapter(getActivity(), array_keyboard.getListOfConverterNoSub(),R.layout.key_layout);
+        KeyboardAdapter adapter = new KeyboardAdapter(getActivity(), GeneralArray.getListOfConverterNoSub(),R.layout.key_layout);
         keyboard.setAdapter(adapter);
     }
 

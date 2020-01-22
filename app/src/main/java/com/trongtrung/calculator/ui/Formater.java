@@ -1,7 +1,5 @@
 package com.trongtrung.calculator.ui;
 
-import android.widget.Toast;
-
 /**
  * Created by NguyenTrongTrung on 21 January 2020
  */

@@ -31,7 +31,6 @@ public class LengthFragment extends Fragment {
     private Spinner listLengthUnitInput, listLengthUnitOutput;
     private GridView keyboard;
     private TextView inputField, outputField;
-    private GeneralArray array_keyboard;
     private View root;
     private Converter converter;
     private ImageButton exchange;
@@ -195,8 +194,7 @@ public class LengthFragment extends Fragment {
 
     private void createKeyboardVertical()
     {
-        array_keyboard = new GeneralArray();
-        KeyboardAdapter adapter = new KeyboardAdapter(getActivity(), array_keyboard.getListOfConverterNoSub(),R.layout.key_layout);
+        KeyboardAdapter adapter = new KeyboardAdapter(getActivity(), GeneralArray.getListOfConverterNoSub(),R.layout.key_layout);
         keyboard.setAdapter(adapter);
     }
 

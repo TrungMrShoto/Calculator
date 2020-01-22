@@ -13,7 +13,7 @@
 
     <fragment
         android:id="@+id/nav_programmer"
-        android:name="com.trongtrung.calculator.ui.programmer.ProgrammerFragment"
+        android:name="com.trongtrung.calculator.ui.ProgrammerFragment"
         android:label="@string/menu_programmer"
         tools:layout="@layout/fragment_programmer" />
 

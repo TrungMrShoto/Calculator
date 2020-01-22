@@ -1,6 +1,7 @@
 package com.trongtrung.calculator;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 /**
@@ -9,65 +10,91 @@ import java.util.List;
 public class GeneralArray {
     private static List<String> listOfConverterNoSub;
     private static List<String> listOfConverterSub;
+    private static List<String> listOfProgrammerVerical;
+    private static List<String> listOfProgrammerHorizontal;
+    private static List<String> listOfStandardVertical;
+    private static List<String> listOfStandardHorizontal;
 
-    public GeneralArray() {
-        if (listOfConverterNoSub == null)
-        {
-            initialConvertNoSub();
-        }
-        if (listOfConverterSub == null)
-        {
-            initialConvertSub();
-        }
+    public static List<String> getListOfProgrammerVerical() {
+        if (listOfProgrammerVerical == null) initialProgrammerVertical();
+        return listOfProgrammerVerical;
     }
 
-    private void initialConvertNoSub()
-    {
-        listOfConverterNoSub = new ArrayList<>();
-        listOfConverterNoSub.add(GeneralCharacter.SPACE);
-        listOfConverterNoSub.add(GeneralCharacter.CE);
-        listOfConverterNoSub.add(GeneralCharacter.DEL);
-        listOfConverterNoSub.add("7");
-        listOfConverterNoSub.add("8");
-        listOfConverterNoSub.add("9");
-        listOfConverterNoSub.add("4");
-        listOfConverterNoSub.add("5");
-        listOfConverterNoSub.add("6");
-        listOfConverterNoSub.add("1");
-        listOfConverterNoSub.add("2");
-        listOfConverterNoSub.add("3");
-        listOfConverterNoSub.add(GeneralCharacter.SPACE);
-        listOfConverterNoSub.add("0");
-        listOfConverterNoSub.add(GeneralCharacter.POINT);
+    public static List<String> getListOfProgrammerHorizontal() {
+        if (listOfProgrammerHorizontal == null) initialProgrammerHorizontal();
+        return listOfProgrammerHorizontal;
     }
 
-    private void initialConvertSub()
-    {
-        listOfConverterSub = new ArrayList<>();
-        listOfConverterSub.add(GeneralCharacter.SPACE);
-        listOfConverterSub.add(GeneralCharacter.CE);
-        listOfConverterSub.add(GeneralCharacter.DEL);
-        listOfConverterSub.add("7");
-        listOfConverterSub.add("8");
-        listOfConverterSub.add("9");
-        listOfConverterSub.add("4");
-        listOfConverterSub.add("5");
-        listOfConverterSub.add("6");
-        listOfConverterSub.add("1");
-        listOfConverterSub.add("2");
-        listOfConverterSub.add("3");
-        listOfConverterSub.add(GeneralCharacter.ADD_AND_SUB);
-        listOfConverterSub.add("0");
-        listOfConverterSub.add(GeneralCharacter.POINT);
+    public static List<String> getListOfStandardVertical() {
+        if (listOfStandardVertical == null) initialStandardVertical();
+        return listOfStandardVertical;
     }
 
-    public List<String> getListOfConverterNoSub()
+    public static List<String> getListOfStandardHorizontal() {
+        if (listOfStandardHorizontal == null) initialStandardHorizontal();
+        return listOfStandardHorizontal;
+    }
+
+    public static  List<String> getListOfConverterNoSub()
     {
+        if (listOfConverterNoSub == null) initialConverterNoSub();
         return listOfConverterNoSub;
     }
 
-    public List<String> getListOfConverterSub()
+    public static List<String> getListOfConverterSub()
     {
+        if (listOfConverterSub == null ) initialConverterSub();
         return listOfConverterSub;
     }
+
+    private GeneralArray(){}
+
+    private static void initialProgrammerVertical(){
+        listOfProgrammerVerical = new ArrayList<>();
+        String[] key = {
+                "A", GeneralCharacter.LEFT_SHIFT,GeneralCharacter.RIGHT_SHIFT,GeneralCharacter.CE, GeneralCharacter.DEL,
+                "B", GeneralCharacter.LEFT_PARENTHESIS, GeneralCharacter.RIGHT_PARENTHESIS, GeneralCharacter.MOD, GeneralCharacter.DIV,
+                "C", "7", "8", "9", GeneralCharacter.MUL,
+                "D", "4", "5", "6", GeneralCharacter.SUB,
+                "E", "1", "2", "3", GeneralCharacter.ADD,
+                "F", GeneralCharacter.ADD_AND_SUB, "0", GeneralCharacter.ANS, GeneralCharacter.EQUAL
+        };
+        listOfProgrammerVerical = Arrays.asList(key);
+    }
+    private static void initialStandardHorizontal(){
+
+    }
+    private static void initialStandardVertical(){
+
+    }
+    private static void initialProgrammerHorizontal() {
+    }
+
+    private static void initialConverterNoSub()
+    {
+        listOfConverterNoSub = new ArrayList<>();
+        String[] key = {
+                GeneralCharacter.SPACE, GeneralCharacter.CE, GeneralCharacter.DEL,
+                "7" ,"8","9",
+                "4","5","6",
+                "1","2","3",
+                GeneralCharacter.SPACE, "0", GeneralCharacter.POINT
+        };
+        listOfConverterNoSub = Arrays.asList(key);
+    }
+
+    private static void initialConverterSub()
+    {
+        listOfConverterSub = new ArrayList<>();
+        String[] key = {
+                GeneralCharacter.SPACE, GeneralCharacter.CE, GeneralCharacter.DEL,
+                "7" ,"8","9",
+                "4","5","6",
+                "1","2","3",
+                GeneralCharacter.ADD_AND_SUB, "0", GeneralCharacter.POINT
+        };
+        listOfConverterNoSub = Arrays.asList(key);
+    }
+
+
 }

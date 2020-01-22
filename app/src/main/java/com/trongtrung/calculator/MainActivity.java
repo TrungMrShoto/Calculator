@@ -36,6 +36,7 @@ public class MainActivity extends AppCompatActivity {
 
         DrawerLayout drawer = findViewById(R.id.drawer_layout);
         NavigationView navigationView = findViewById(R.id.nav_view);
+
         // Passing each menu ID as a set of Ids because each
         // menu should be considered as top level destinations.
         mAppBarConfiguration = new AppBarConfiguration.Builder(
@@ -46,40 +47,6 @@ public class MainActivity extends AppCompatActivity {
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment);
         NavigationUI.setupActionBarWithNavController(this, navController, mAppBarConfiguration);
         NavigationUI.setupWithNavController(navigationView, navController);
-
-
-//        navigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
-//            @Override
-//            public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
-//                System.out.println(menuItem.getItemId());
-//                switch (menuItem.getItemId())
-//                {
-//                    case R.id.nav_standard:
-//                        Toast.makeText(MainActivity.this,"standard",Toast.LENGTH_SHORT).show();
-//                        break;
-//                    case R.id.nav_programmer:
-//                        Toast.makeText(MainActivity.this,"programmer",Toast.LENGTH_SHORT).show();
-//                        break;
-//                    case R.id.nav_length:
-//                        Toast.makeText(MainActivity.this,"length",Toast.LENGTH_SHORT).show();
-//                        break;
-//                    case R.id.nav_weight:
-//                        Toast.makeText(MainActivity.this,"weight",Toast.LENGTH_SHORT).show();
-//                        break;
-//                    case R.id.nav_temp:
-//                        Toast.makeText(MainActivity.this,"temp",Toast.LENGTH_SHORT).show();
-//                        break;
-//                    case R.id.nav_speed:
-//                        Toast.makeText(MainActivity.this,"speed",Toast.LENGTH_SHORT).show();
-//                        break;
-//
-//                    default:
-//                        Toast.makeText(MainActivity.this,"error",Toast.LENGTH_SHORT).show();
-//                        break;
-//                }
-//                return true;
-//            }
-//        });
 
     }
 

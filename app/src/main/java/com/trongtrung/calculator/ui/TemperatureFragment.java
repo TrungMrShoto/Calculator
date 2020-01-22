@@ -30,14 +30,13 @@ public class TemperatureFragment extends Fragment {
     private Spinner listTempUnitInput, listTempUnitOutput;
     private GridView keyboard;
     private TextView inputField, outputField;
-    private GeneralArray array_keyboard;
     private View root;
     private Converter converter;
     private ImageButton exchange;
     private static String inputDefault="0";
     private static int inputUnit = 0;
     private static int outputUnit = 0;
-    KeyboardAdapter adapter;
+
 
     private enum TemperatureUnitCode{
         C(0),F(1),K(2);
@@ -224,8 +223,7 @@ public class TemperatureFragment extends Fragment {
 
     private void createKeyboardVertical()
     {
-        array_keyboard = new GeneralArray();
-        adapter = new KeyboardAdapter(getActivity(), array_keyboard.getListOfConverterSub(),R.layout.key_layout);
+        KeyboardAdapter adapter = new KeyboardAdapter(getActivity(), GeneralArray.getListOfConverterSub(),R.layout.key_layout);
         keyboard.setAdapter(adapter);
     }
 
@@ -257,11 +255,11 @@ public class TemperatureFragment extends Fragment {
         int unitPosition = listTempUnitInput.getSelectedItemPosition();
         if (unitPosition == TemperatureUnitCode.C.getCode())
         {
-            if (Double.valueOf(input) < Unit.CELSIUS_MIN) return true;
+            return Double.valueOf(input) < Unit.CELSIUS_MIN;
         }
         else if (unitPosition == TemperatureUnitCode.F.getCode())
         {
-            if (Double.valueOf(input) < Unit.FAHRENHEIT_MIN) return true;
+            return Double.valueOf(input) < Unit.FAHRENHEIT_MIN;
         }
         return false;
     }
