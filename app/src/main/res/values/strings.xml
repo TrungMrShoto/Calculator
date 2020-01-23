@@ -20,6 +20,11 @@
     <string name="email">trung.nguyen.shotokun@gmail.com</string>
     <string name="author_text">Hope you enjoy my application!</string>
 
+    <string name="left_replay">Replay left</string>
+    <string name="right_replay">Replay right</string>
+
+    <string name="default_value">0</string>
+
 <!--    array for length unit-->
     <string-array name="array_length_unit">
         <item>Nanometers (nm)</item>
@@ -80,5 +85,10 @@
         <item>Circular shift</item>
         <item>Rotate through carry</item>
     </string-array>
+    
+    <string name="HEX">HEX</string>
+    <string name="DEC">DEC</string>
+    <string name="OCT">OCT</string>
+    <string name="BIN">BIN </string>
 
 </resources>

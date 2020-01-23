@@ -1,7 +1,7 @@
 package com.trongtrung.calculator;
 
 import android.content.Context;
-import android.graphics.Color;
+import android.util.TypedValue;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -10,20 +10,21 @@ import android.widget.TextView;
 
 import java.util.List;
 
-import static com.trongtrung.calculator.R.color.c3;
 
 /**
  * Created by NguyenTrongTrung on 19 January 2020
  */
 public class KeyboardAdapter extends BaseAdapter {
     private Context context;
-    private List<String> listOfKeyBoardCharacter;
+    private List<Element> listOfKeyBoardCharacter;
     private int layout;
+    private float textSize;
 
-    public KeyboardAdapter(Context context, List<String> listOfKeyBoardCharacter, int layout) {
+    public KeyboardAdapter(Context context, List<Element> listOfKeyBoardCharacter, int layout, float textSize) {
         this.context = context;
         this.listOfKeyBoardCharacter = listOfKeyBoardCharacter;
         this.layout = layout;
+        this.textSize = textSize;
     }
 
     @Override
@@ -60,11 +61,12 @@ public class KeyboardAdapter extends BaseAdapter {
             holder = (ViewHolder) convertView.getTag();
         }
 
-        String character = listOfKeyBoardCharacter.get(position);
-        if (character.equals(GeneralCharacter.DEL) || character.equals(GeneralCharacter.CE)) {
-            holder.txtKey.setBackgroundColor(context.getResources().getColor(R.color.c3,null));
-        }
-        holder.txtKey.setText(character);
+        Element character = listOfKeyBoardCharacter.get(position);
+
+        holder.txtKey.setBackgroundColor(context.getResources().getColor(character.getColor(),null));
+        holder.txtKey.setTextSize(TypedValue.COMPLEX_UNIT_SP, textSize);
+        holder.txtKey.setText(character.getName());
+
         return convertView;
     }
 }

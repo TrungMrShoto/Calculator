@@ -1,5 +1,6 @@
 package com.trongtrung.calculator.ui;
 
+import android.content.res.Configuration;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -45,9 +46,10 @@ public class WeightFragment extends Fragment {
         initialize();
         createSpinner();
 
-//        if (root.getResources().getConfiguration().orientation == Configuration.ORIENTATION_LANDSCAPE)
-
-        createKeyboardVertical();
+        if (root.getResources().getConfiguration().orientation == Configuration.ORIENTATION_LANDSCAPE)
+            createKeyboardHorizontal();
+        else
+            createKeyboardVertical();
         listWeightUnitInput.setSelection(inputUnit);
         listWeightUnitOutput.setSelection(outputUnit);
         updateResult(input);
@@ -192,7 +194,20 @@ public class WeightFragment extends Fragment {
 
     private void createKeyboardVertical()
     {
-        KeyboardAdapter adapter = new KeyboardAdapter(getActivity(), GeneralArray.getListOfConverterNoSub(),R.layout.key_layout);
+        KeyboardAdapter adapter = new KeyboardAdapter(
+                getActivity(),
+                GeneralArray.getListOfConverterNoSub(),
+                R.layout.key_layout,
+                25.0f);
+        keyboard.setAdapter(adapter);
+    }
+
+    private void createKeyboardHorizontal() {
+        KeyboardAdapter adapter = new KeyboardAdapter(
+                getActivity(),
+                GeneralArray.getListOfConverterNoSub(),
+                R.layout.key_layout,
+                25.0f);
         keyboard.setAdapter(adapter);
     }
 

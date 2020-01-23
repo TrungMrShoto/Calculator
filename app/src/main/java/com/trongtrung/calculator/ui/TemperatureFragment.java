@@ -1,5 +1,6 @@
 package com.trongtrung.calculator.ui;
 
+import android.content.res.Configuration;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -58,7 +59,10 @@ public class TemperatureFragment extends Fragment {
         initialize();
         createSpinner();
 
-//        if (root.getResources().getConfiguration().orientation == Configuration.ORIENTATION_LANDSCAPE)
+        if (root.getResources().getConfiguration().orientation == Configuration.ORIENTATION_LANDSCAPE)
+            createKeyboardHorizontal();
+        else
+            createKeyboardVertical();
 
         createKeyboardVertical();
 
@@ -223,7 +227,20 @@ public class TemperatureFragment extends Fragment {
 
     private void createKeyboardVertical()
     {
-        KeyboardAdapter adapter = new KeyboardAdapter(getActivity(), GeneralArray.getListOfConverterSub(),R.layout.key_layout);
+        KeyboardAdapter adapter = new KeyboardAdapter(
+                getActivity(),
+                GeneralArray.getListOfConverterNoSub(),
+                R.layout.key_layout,
+                25.0f);
+        keyboard.setAdapter(adapter);
+    }
+
+    private void createKeyboardHorizontal() {
+        KeyboardAdapter adapter = new KeyboardAdapter(
+                getActivity(),
+                GeneralArray.getListOfConverterNoSub(),
+                R.layout.key_layout,
+                25.0f);
         keyboard.setAdapter(adapter);
     }
 

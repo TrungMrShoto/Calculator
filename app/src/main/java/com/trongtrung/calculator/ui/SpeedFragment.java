@@ -1,5 +1,6 @@
 package com.trongtrung.calculator.ui;
 
+import android.content.res.Configuration;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -44,7 +45,10 @@ public class SpeedFragment extends Fragment {
 
         initialize();
         createSpinner();
-        createKeyboard();
+        if (root.getResources().getConfiguration().orientation == Configuration.ORIENTATION_LANDSCAPE)
+            createKeyboardHorizontal();
+        else
+            createKeyboardVertical();
         listSpeedUnitOutput.setSelection(inputUnit);
         listSpeedUnitInput.setSelection(outputUnit);
         updateResult(inputDefault);
@@ -187,12 +191,6 @@ public class SpeedFragment extends Fragment {
     }
 
 
-    private void createKeyboard()
-    {
-        KeyboardAdapter adapter = new KeyboardAdapter(getActivity(), GeneralArray.getListOfConverterNoSub(),R.layout.key_layout);
-        keyboard.setAdapter(adapter);
-    }
-
     private String getStringAfterDeleting(String input)
     {
         if (input.charAt(0) == '-') {
@@ -211,5 +209,24 @@ public class SpeedFragment extends Fragment {
         }
 
         return input;
+    }
+
+    private void createKeyboardVertical()
+    {
+        KeyboardAdapter adapter = new KeyboardAdapter(
+                getActivity(),
+                GeneralArray.getListOfConverterNoSub(),
+                R.layout.key_layout,
+                25.0f);
+        keyboard.setAdapter(adapter);
+    }
+
+    private void createKeyboardHorizontal() {
+        KeyboardAdapter adapter = new KeyboardAdapter(
+                getActivity(),
+                GeneralArray.getListOfConverterNoSub(),
+                R.layout.key_layout,
+                25.0f);
+        keyboard.setAdapter(adapter);
     }
 }
