@@ -1,5 +1,6 @@
 package com.trongtrung.calculator.ui;
 
+import android.content.res.Configuration;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -31,17 +32,30 @@ public class ProgrammerFragment extends Fragment {
         root = inflater.inflate(R.layout.fragment_programmer, container, false);
 
         initialize();
-        createKeyboardVertical();
+        if (root.getResources().getConfiguration().orientation == Configuration.ORIENTATION_LANDSCAPE)
+            createKeyboardHorizontal(18.8f);
+        else
+            createKeyboard(23.6f);
 
         return root;
     }
 
-    private void createKeyboardVertical() {
+    private void createKeyboard(float textSize) {
         KeyboardAdapter adapter = new KeyboardAdapter(
                 getActivity(),
                 GeneralArray.getListOfProgrammerVertical(),
                 R.layout.key_layout,
-                16.0f
+                textSize
+        );
+        keyboard.setAdapter(adapter);
+    }
+    private void createKeyboardHorizontal(float textSize)
+    {
+        KeyboardAdapter adapter = new KeyboardAdapter(
+                getActivity(),
+                GeneralArray.getListOfProgrammerHorizontal(),
+                R.layout.key_layout,
+                textSize
         );
         keyboard.setAdapter(adapter);
     }
@@ -49,4 +63,12 @@ public class ProgrammerFragment extends Fragment {
     private void initialize() {
         keyboard = root.findViewById(R.id.program_keyboard);
     }
+
+//    Display display = getWindowManager().getDefaultDisplay();
+//    Point size = new Point();
+// display.getSize(size);
+//    int width = size.x;
+//    int height = size.y;
+// Log.e("Width", "" + width);
+// Log.e("height", "" + height);
 }

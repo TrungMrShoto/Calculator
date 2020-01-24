@@ -47,9 +47,9 @@ public class WeightFragment extends Fragment {
         createSpinner();
 
         if (root.getResources().getConfiguration().orientation == Configuration.ORIENTATION_LANDSCAPE)
-            createKeyboardHorizontal();
+            createKeyboard(20.0f);
         else
-            createKeyboardVertical();
+            createKeyboard(25.0f);
         listWeightUnitInput.setSelection(inputUnit);
         listWeightUnitOutput.setSelection(outputUnit);
         updateResult(input);
@@ -192,22 +192,13 @@ public class WeightFragment extends Fragment {
     }
 
 
-    private void createKeyboardVertical()
+    private void createKeyboard(float textSize)
     {
         KeyboardAdapter adapter = new KeyboardAdapter(
                 getActivity(),
                 GeneralArray.getListOfConverterNoSub(),
                 R.layout.key_layout,
-                25.0f);
-        keyboard.setAdapter(adapter);
-    }
-
-    private void createKeyboardHorizontal() {
-        KeyboardAdapter adapter = new KeyboardAdapter(
-                getActivity(),
-                GeneralArray.getListOfConverterNoSub(),
-                R.layout.key_layout,
-                25.0f);
+                textSize);
         keyboard.setAdapter(adapter);
     }
 
