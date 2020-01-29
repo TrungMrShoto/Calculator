@@ -14,6 +14,13 @@ public class GeneralArray {
     private static List<Element> listOfProgrammerHorizontal;
     private static List<Element> listOfStandardVertical;
     private static List<Element> listOfStandardHorizontal;
+    private static List<Element> listOfConverterSubHorizontal;
+
+    public static List<Element> getListOfConverterSubHorizontal()
+    {
+        if (listOfConverterSubHorizontal == null) initialConverterSubHorizontal();
+        return listOfConverterSubHorizontal;
+    }
 
     public static List<Element> getListOfProgrammerVertical() {
         if (listOfProgrammerVertical == null) initialProgrammerVertical();
@@ -138,7 +145,7 @@ public class GeneralArray {
     {
         listOfConverterNoSub = new ArrayList<>();
         Element[] key = {
-                new Element(GeneralCharacter.SPACE, R.color.c3),
+                new Element(GeneralCharacter.SPACE, R.color.c2),
                 new Element(GeneralCharacter.CE, R.color.c2),
                 new Element(GeneralCharacter.DEL, R.color.c2),
                 new Element("7", R.color.c3),
@@ -161,7 +168,7 @@ public class GeneralArray {
     {
         listOfConverterSub = new ArrayList<>();
         Element[] key = {
-                new Element(GeneralCharacter.SPACE, R.color.c3),
+                new Element(GeneralCharacter.SPACE, R.color.c2),
                 new Element(GeneralCharacter.CE, R.color.c2),
                 new Element(GeneralCharacter.DEL, R.color.c2),
                 new Element("7", R.color.c3),
@@ -177,7 +184,31 @@ public class GeneralArray {
                 new Element("0", R.color.c3),
                 new Element(GeneralCharacter.POINT,R.color.c3)
         };
-        listOfConverterNoSub = Arrays.asList(key);
+        listOfConverterSub = Arrays.asList(key);
+    }
+
+    private static void initialConverterSubHorizontal()
+    {
+        listOfConverterSubHorizontal = new ArrayList<>();
+        Element[] key = {
+                new Element("7", R.color.c3),
+                new Element("8",R.color.c3),
+                new Element("9", R.color.c3),
+                new Element(GeneralCharacter.CE, R.color.c2),
+                new Element("4",R.color.c3),
+                new Element("5", R.color.c3),
+                new Element("6",R.color.c3),
+                new Element(GeneralCharacter.DEL, R.color.c2),
+                new Element("1", R.color.c3),
+                new Element("2",R.color.c3),
+                new Element("3", R.color.c3),
+                new Element(GeneralCharacter.SPACE, R.color.c2),
+                new Element(GeneralCharacter.ADD_AND_SUB,R.color.c3),
+                new Element("0", R.color.c3),
+                new Element(GeneralCharacter.POINT,R.color.c3),
+                new Element(GeneralCharacter.SPACE, R.color.c2)
+        };
+        listOfConverterSubHorizontal = Arrays.asList(key);
     }
 
 

@@ -10,6 +10,7 @@ public class SpeedConverter implements Converter{
         public int getCode() {return this.unitCode;}
     }
 
+    public SpeedConverter(){}
     public double convert(double inputValue, int inputUnit, int outputUnit)
     {
         if (inputUnit == outputUnit) return inputValue;

@@ -7,6 +7,9 @@ package com.trongtrung.calculator.converter;
 public class LengthConverter implements Converter{
 
     private final int BORDER_SI_US = 6;
+
+    public LengthConverter() { }
+
     private enum LengthUnitCode
     {
         INCHES(7), FEET(8), YARDS(9);

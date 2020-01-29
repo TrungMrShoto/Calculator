@@ -23,6 +23,9 @@ public class WeightConverter implements Converter{
                     Unit.OUNCE_TO_GRAM, Unit.POUND_TO_GRAM, Unit.STONE_TO_GRAM
 
             };
+
+    public WeightConverter(){}
+
     public double convert(double inputValue, int inputUnit, int outputUnit)
     {
         if(inputUnit == outputUnit)

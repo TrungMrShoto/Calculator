@@ -38,7 +38,7 @@
         android:textStyle="bold"
         android:textColor="@color/c4"
         android:layout_marginTop="10dp"
-        android:textSize="20dp"
+        android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/author" />
@@ -63,7 +63,7 @@
         android:id="@+id/imageView3"
         android:layout_width="50dp"
         android:layout_height="50dp"
-
+        android:contentDescription=""
         android:src="@drawable/ic_left_quote"
         app:layout_constraintBottom_toTopOf="@+id/author_quote"
         app:layout_constraintEnd_toStartOf="@+id/author_quote"
@@ -73,6 +73,7 @@
     <ImageView
         android:layout_width="50dp"
         android:layout_height="50dp"
+        android:contentDescription=""
         android:src="@drawable/ic_right_quote"
         app:layout_constraintStart_toEndOf="@+id/author_quote"
         app:layout_constraintTop_toBottomOf="@+id/author_quote" />

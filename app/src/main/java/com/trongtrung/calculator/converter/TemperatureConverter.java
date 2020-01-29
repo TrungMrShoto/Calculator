@@ -17,6 +17,7 @@ public class TemperatureConverter implements Converter{
             return this.unitCode;
         }
     }
+    public TemperatureConverter(){}
     public double convert(double inputValue, int inputUnit, int outputUnit)
     {
         if (inputUnit == outputUnit)

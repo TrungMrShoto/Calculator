@@ -10,8 +10,9 @@
     <string name="menu_programmer">Programmer</string>
 
 
+    <string name="menu_converter">Converter</string>
     <string name="menu_length">Length</string>
-    <string name="menu_weight">Weight and Mass</string>
+    <string name="menu_weight">Weight</string>
     <string name="menu_temp">Temperature</string>
     <string name="menu_speed">Speed</string>
     <string name="menu_about">About</string>
@@ -25,8 +26,20 @@
     <string name="exchange_unit">Exchange unit</string>
 
     <string name="default_value">0</string>
+    <string name="bitwise">Bitwise</string>
+    <string name="bit_shift">Bit shift</string>
 
+<!--    array for converter-->
+    <string-array name="array_converter">
+        <item>Length</item>
+        <item>Weight</item>
+        <item>Temperature</item>
+        <item>Speed</item>
+    </string-array>
 
+    <string-array name="array_null">
+        <item></item>
+    </string-array>
 <!--    array for length unit-->
     <string-array name="array_length_unit">
         <item>Nanometers (nm)</item>
