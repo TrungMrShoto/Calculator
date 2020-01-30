@@ -24,6 +24,7 @@
 
     <string name="default_value">0</string>
     <string name="bitwise">Bitwise</string>
+    <string name="Quote">Quote</string>
 
 <!--    array for converter-->
     <string-array name="array_converter">
