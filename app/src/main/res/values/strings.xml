@@ -20,14 +20,10 @@
     <string name="author">Trung Nguyen</string>
     <string name="email">trung.nguyen.shotokun@gmail.com</string>
     <string name="author_text">Hope you enjoy my application!</string>
-
-    <string name="left_replay">Replay left</string>
-    <string name="right_replay">Replay right</string>
     <string name="exchange_unit">Exchange unit</string>
 
     <string name="default_value">0</string>
     <string name="bitwise">Bitwise</string>
-    <string name="bit_shift">Bit shift</string>
 
 <!--    array for converter-->
     <string-array name="array_converter">

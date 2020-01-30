@@ -18,6 +18,8 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
+import com.trongtrung.calculator.ConverterItemSpinner;
+import com.trongtrung.calculator.ConverterSpinnerAdapter;
 import com.trongtrung.calculator.Element;
 import com.trongtrung.calculator.GeneralArray;
 import com.trongtrung.calculator.GeneralCharacter;
@@ -39,6 +41,7 @@ public class ConverterFragment extends Fragment {
     private TextView inputField, outputField;
     private GridView keyboard;
     private List<Converter> converter;
+    private List<ConverterItemSpinner> listConverterItem;
     private ImageButton exchangeButton;
     private ConverterBuilder builder;
     private static String inputDefault = "0";
@@ -71,9 +74,9 @@ public class ConverterFragment extends Fragment {
         initializeSpinner();
 
         if (root.getResources().getConfiguration().orientation == Configuration.ORIENTATION_LANDSCAPE)
-            initializeKeyboardHorizontal(size.y * 20.9f / (1080));
+            initializeKeyboardHorizontal(size.y * 14.5f / (1080));
         else
-            initializeKeyboardVertical(size.y * 28f / 1776);
+            initializeKeyboardVertical(size.y * 20f / 1776);
 
         updateResult(inputDefault);
 
@@ -173,7 +176,8 @@ public class ConverterFragment extends Fragment {
                     case GeneralCharacter.ADD_AND_SUB:
                         if (isTemperatureConverter())
                         {
-                            if((String.valueOf(listConverter.getSelectedItem()).contains(TemperatureUnitCode.K.getCode())) ||
+                            ConverterItemSpinner itemConverter = (ConverterItemSpinner) listConverter.getSelectedItem();
+                            if(itemConverter.getItemName().contains(TemperatureUnitCode.K.getCode()) ||
                                     (input.charAt(0) != '-' && checkMinimumTemperature("-"+input)))
                             {
                                 inputValue = input;
@@ -232,6 +236,7 @@ public class ConverterFragment extends Fragment {
         display.getSize(size);
         keyboard = root.findViewById(R.id.converter_keyboard);
         converter = builder.getListConverter();
+        listConverterItem = builder.getListConverterItemSpinner();
         listConverter = root.findViewById(R.id.converter_choice);
         inputField = root.findViewById(R.id.input_converter);
         listUnitInput = root.findViewById(R.id.input_converter_unit);
@@ -242,18 +247,23 @@ public class ConverterFragment extends Fragment {
     }
 
     private void initializeSpinner(){
-        ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(getActivity(),
-                R.array.array_converter, android.R.layout.simple_spinner_item);
-                adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+
+        ConverterSpinnerAdapter adapter = new ConverterSpinnerAdapter(
+                getActivity(), R.layout.custom_converter_spinner, listConverterItem);
+//        ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(getActivity(),
+//                R.array.array_converter, android.R.layout.simple_spinner_item);
+//                adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         listConverter.setAdapter(adapter);
         listConverter.setSelection(converterItemChoice);
-
         initializeUnitSpinner();
     }
 
     private void initializeUnitSpinner()
     {
-        int converterPosition = builder.getConverterLayout(String.valueOf(listConverter.getItemAtPosition(converterItemChoice)));
+
+        ConverterItemSpinner itemConverter = (ConverterItemSpinner) listConverter.getItemAtPosition(converterItemChoice);
+        int converterPosition = builder.getConverterLayout(itemConverter.getItemName());
+        System.out.println(converterPosition);
         ArrayAdapter<CharSequence> unitAdapter = ArrayAdapter.createFromResource(getActivity(),
                 converterPosition,
                 android.R.layout.simple_spinner_item);
@@ -321,7 +331,8 @@ public class ConverterFragment extends Fragment {
 
     private boolean isTemperatureConverter()
     {
-        return String.valueOf(listConverter.getSelectedItem()).equals(getString(R.string.menu_temp));
+        ConverterItemSpinner itemConverter = (ConverterItemSpinner) listConverter.getSelectedItem();
+        return itemConverter.getItemName().equals(getString(R.string.menu_temp));
     }
 
     private boolean checkMinimumTemperature(String input)

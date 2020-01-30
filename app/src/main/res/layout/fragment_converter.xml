@@ -38,7 +38,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAlignment="textEnd"
-        style="@style/Widget.AppCompat.DropDownItem.Spinner"
         app:layout_constraintBottom_toTopOf="@+id/guideline53"
         app:layout_constraintEnd_toStartOf="@+id/guideline62"
         app:layout_constraintTop_toTopOf="@+id/guideline52" />

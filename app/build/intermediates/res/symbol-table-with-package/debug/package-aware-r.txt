@@ -1083,6 +1083,7 @@ drawable design_ic_visibility
 drawable design_ic_visibility_off
 drawable design_password_eye
 drawable design_snackbar_background
+drawable ic_arrow
 drawable ic_calculator
 drawable ic_code
 drawable ic_down_arrow
@@ -1128,8 +1129,10 @@ id CTRL
 id DEC
 id FUNCTION
 id HEX
+id HYP
 id META
 id OCT
+id RAD
 id SHIFT
 id SYM
 id accessibility_action_clickable_span
@@ -1198,7 +1201,6 @@ id auto
 id barrier
 id beginning
 id bin_result
-id bit_shift_button
 id bitwise_button
 id blocking
 id bottom
@@ -1235,8 +1237,6 @@ id dialog_button
 id dimensions
 id direct
 id disableHome
-id divider1
-id divider2
 id drawer_layout
 id edit_query
 id end
@@ -1259,24 +1259,20 @@ id group_divider
 id groups
 id guideline10
 id guideline11
-id guideline12
 id guideline13
 id guideline14
 id guideline15
-id guideline16
-id guideline18
 id guideline2
 id guideline3
 id guideline30
 id guideline31
-id guideline32
-id guideline33
 id guideline4
 id guideline40
 id guideline41
 id guideline42
 id guideline43
 id guideline44
+id guideline45
 id guideline5
 id guideline51
 id guideline52
@@ -1295,10 +1291,10 @@ id guideline67
 id guideline68
 id guideline69
 id guideline7
-id guideline8
 id hex_result
 id home
 id homeAsUp
+id horizontalScrollView
 id icon
 id icon_group
 id ifRoom
@@ -1315,7 +1311,6 @@ id item_touch_helper_previous_elevation
 id labeled
 id largeLabel
 id left
-id left_replay
 id line1
 id line3
 id listMode
@@ -1329,6 +1324,7 @@ id mobile_navigation
 id mtrl_child_content_container
 id mtrl_internal_children_alpha_tag
 id multiply
+id name
 id nav_about
 id nav_controller_view_tag
 id nav_converter
@@ -1357,13 +1353,12 @@ id parent_matrix
 id percent
 id pin
 id program_keyboard
-id programmer_result
+id programmer_input
 id progress_circular
 id progress_horizontal
 id radio
 id right
 id right_icon
-id right_replay
 id right_side
 id save_image_matrix
 id save_non_transition_alpha
@@ -1509,6 +1504,7 @@ layout abc_tooltip
 layout activity_main
 layout app_bar_main
 layout content_main
+layout custom_converter_spinner
 layout custom_dialog
 layout design_bottom_navigation_item
 layout design_bottom_sheet_dialog
@@ -1588,7 +1584,6 @@ string app_name
 string appbar_scrolling_view_behavior
 string author
 string author_text
-string bit_shift
 string bitwise
 string bottom_sheet_behavior
 string character_counter_content_description
@@ -1599,7 +1594,6 @@ string exchange_unit
 string fab_transformation_scrim_behavior
 string fab_transformation_sheet_behavior
 string hide_bottom_view_on_scroll_behavior
-string left_replay
 string menu_about
 string menu_converter
 string menu_length
@@ -1619,7 +1613,6 @@ string path_password_eye
 string path_password_eye_mask_strike_through
 string path_password_eye_mask_visible
 string path_password_strike_through
-string right_replay
 string search_menu_title
 string status_bar_notification_info_overflow
 style AlertDialog_AppCompat

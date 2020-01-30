@@ -2,6 +2,7 @@ package com.trongtrung.calculator.ui;
 
 import android.content.Context;
 
+import com.trongtrung.calculator.ConverterItemSpinner;
 import com.trongtrung.calculator.R;
 import com.trongtrung.calculator.converter.Converter;
 import com.trongtrung.calculator.converter.LengthConverter;
@@ -25,11 +26,14 @@ public class ConverterBuilder {
         this.context = context;
         listConverterString = Arrays.asList(context.getResources().getStringArray(R.array.array_converter));
     }
-
-    public int getConverterItem(String input)
+    public List<ConverterItemSpinner> getListConverterItemSpinner()
     {
-        int position =  listConverterString.indexOf(input);
-        return position;
+        List<ConverterItemSpinner> list = new ArrayList<>();
+        for (String str : listConverterString)
+        {
+            list.add(new ConverterItemSpinner(str,getImageItemResource(str)));
+        }
+        return list;
     }
 
     public List<Converter> getListConverter()
@@ -42,6 +46,19 @@ public class ConverterBuilder {
         return list;
     }
 
+    private int getImageItemResource(String input)
+    {
+        if (input.equals(context.getString(R.string.menu_length)))
+            return R.drawable.ic_ruler;
+        else if (input.equals(context.getString(R.string.menu_weight)))
+            return R.drawable.ic_weight;
+        else if (input.equals(context.getString(R.string.menu_temp)))
+            return R.drawable.ic_weather;
+        else if (input.equals(context.getString(R.string.menu_speed)))
+            return R.drawable.ic_speed;
+        else
+            return R.drawable.ic_arrow;
+    }
     private Converter getConverter(String input)
     {
         if (input.equals(context.getString(R.string.menu_length)))
@@ -58,13 +75,13 @@ public class ConverterBuilder {
 
     public int getConverterLayout(String input)
     {
-        if (input.equals("Length"))
+        if (input.equals(context.getString(R.string.menu_length)))
             return R.array.array_length_unit;
-        else if (input.equals("Weight"))
+        else if (input.equals(context.getString(R.string.menu_weight)))
             return R.array.array_weight_unit;
-        else if (input.equals("Temperature"))
+        else if (input.equals(context.getString(R.string.menu_temp)))
             return R.array.array_temperature_unit;
-        else if (input.equals("Speed"))
+        else if (input.equals(context.getString(R.string.menu_speed)))
             return R.array.array_speed_unit;
         else
             return R.array.array_null;

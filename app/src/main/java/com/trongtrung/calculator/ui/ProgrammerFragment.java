@@ -6,6 +6,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.GridView;
+import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
@@ -25,6 +26,7 @@ public class ProgrammerFragment extends Fragment {
 
     private View root;
     private GridView keyboard;
+    private TextView inputField;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
@@ -33,9 +35,9 @@ public class ProgrammerFragment extends Fragment {
 
         initialize();
         if (root.getResources().getConfiguration().orientation == Configuration.ORIENTATION_LANDSCAPE)
-            createKeyboardHorizontal(18.8f);
+            createKeyboardHorizontal(12f);
         else
-            createKeyboard(23.6f);
+            createKeyboard(18f);
 
         return root;
     }
@@ -61,14 +63,9 @@ public class ProgrammerFragment extends Fragment {
     }
 
     private void initialize() {
+        inputField = root.findViewById(R.id.programmer_input);
         keyboard = root.findViewById(R.id.program_keyboard);
     }
 
-//    Display display = getWindowManager().getDefaultDisplay();
-//    Point size = new Point();
-// display.getSize(size);
-//    int width = size.x;
-//    int height = size.y;
-// Log.e("Width", "" + width);
-// Log.e("height", "" + height);
+
 }
