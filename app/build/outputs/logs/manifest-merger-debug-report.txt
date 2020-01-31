@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from D:\App_Android\Calculator\app\src\main\AndroidManifest.xml:2:1-25:12
-INJECTED from D:\App_Android\Calculator\app\src\main\AndroidManifest.xml:2:1-25:12
-INJECTED from D:\App_Android\Calculator\app\src\main\AndroidManifest.xml:2:1-25:12
-INJECTED from D:\App_Android\Calculator\app\src\main\AndroidManifest.xml:2:1-25:12
+ADDED from D:\App_Android\Calculator\app\src\main\AndroidManifest.xml:2:1-24:12
+INJECTED from D:\App_Android\Calculator\app\src\main\AndroidManifest.xml:2:1-24:12
+INJECTED from D:\App_Android\Calculator\app\src\main\AndroidManifest.xml:2:1-24:12
+INJECTED from D:\App_Android\Calculator\app\src\main\AndroidManifest.xml:2:1-24:12
 MERGED from [androidx.navigation:navigation-ui:2.0.0] C:\Users\dell\.gradle\caches\transforms-2\files-2.1\c4789b08f6c9dcf99266cfd8e4bc0c4e\jetified-navigation-ui-2.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [com.google.android.material:material:1.0.0] C:\Users\dell\.gradle\caches\transforms-2\files-2.1\2946ca0ea6c89dab7d7d9fbc18e54292\material-1.0.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.appcompat:appcompat:1.1.0] C:\Users\dell\.gradle\caches\transforms-2\files-2.1\d74b5b498b35fd5cb32d0a6997bb1d3d\appcompat-1.1.0\AndroidManifest.xml:17:1-24:12
@@ -47,25 +47,25 @@ MERGED from [androidx.lifecycle:lifecycle-service:2.0.0] C:\Users\dell\.gradle\c
 MERGED from [androidx.lifecycle:lifecycle-runtime:2.1.0] C:\Users\dell\.gradle\caches\transforms-2\files-2.1\34fb4b53ebbbc0d42cf00f739d5b7918\lifecycle-runtime-2.1.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] C:\Users\dell\.gradle\caches\transforms-2\files-2.1\534dfe358287b68b5ba1038d10b7afc0\lifecycle-viewmodel-2.1.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.savedstate:savedstate:1.0.0] C:\Users\dell\.gradle\caches\transforms-2\files-2.1\69ba81d17fd1c26c75281615add0554c\savedstate-1.0.0\AndroidManifest.xml:17:1-24:12
-INJECTED from D:\App_Android\Calculator\app\src\main\AndroidManifest.xml:2:1-25:12
-INJECTED from D:\App_Android\Calculator\app\src\main\AndroidManifest.xml:2:1-25:12
-INJECTED from D:\App_Android\Calculator\app\src\main\AndroidManifest.xml:2:1-25:12
+INJECTED from D:\App_Android\Calculator\app\src\main\AndroidManifest.xml:2:1-24:12
+INJECTED from D:\App_Android\Calculator\app\src\main\AndroidManifest.xml:2:1-24:12
+INJECTED from D:\App_Android\Calculator\app\src\main\AndroidManifest.xml:2:1-24:12
 	package
 		ADDED from D:\App_Android\Calculator\app\src\main\AndroidManifest.xml:3:5-40
 		INJECTED from D:\App_Android\Calculator\app\src\main\AndroidManifest.xml
 		INJECTED from D:\App_Android\Calculator\app\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from D:\App_Android\Calculator\app\src\main\AndroidManifest.xml
-		ADDED from D:\App_Android\Calculator\app\src\main\AndroidManifest.xml:2:1-25:12
+		ADDED from D:\App_Android\Calculator\app\src\main\AndroidManifest.xml:2:1-24:12
 		INJECTED from D:\App_Android\Calculator\app\src\main\AndroidManifest.xml
 	android:versionCode
 		INJECTED from D:\App_Android\Calculator\app\src\main\AndroidManifest.xml
-		ADDED from D:\App_Android\Calculator\app\src\main\AndroidManifest.xml:2:1-25:12
+		ADDED from D:\App_Android\Calculator\app\src\main\AndroidManifest.xml:2:1-24:12
 		INJECTED from D:\App_Android\Calculator\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from D:\App_Android\Calculator\app\src\main\AndroidManifest.xml:2:11-69
 application
-ADDED from D:\App_Android\Calculator\app\src\main\AndroidManifest.xml:5:5-23:19
+ADDED from D:\App_Android\Calculator\app\src\main\AndroidManifest.xml:5:5-22:19
 MERGED from [com.google.android.material:material:1.0.0] C:\Users\dell\.gradle\caches\transforms-2\files-2.1\2946ca0ea6c89dab7d7d9fbc18e54292\material-1.0.0\AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.material:material:1.0.0] C:\Users\dell\.gradle\caches\transforms-2\files-2.1\2946ca0ea6c89dab7d7d9fbc18e54292\material-1.0.0\AndroidManifest.xml:22:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Users\dell\.gradle\caches\transforms-2\files-2.1\508ac768b50158a079142e4dc4915061\constraintlayout-1.1.3\AndroidManifest.xml:9:5-20
@@ -93,23 +93,23 @@ MERGED from [androidx.lifecycle:lifecycle-process:2.0.0] C:\Users\dell\.gradle\c
 	android:theme
 		ADDED from D:\App_Android\Calculator\app\src\main\AndroidManifest.xml:11:9-40
 activity#com.trongtrung.calculator.MainActivity
-ADDED from D:\App_Android\Calculator\app\src\main\AndroidManifest.xml:12:9-22:20
+ADDED from D:\App_Android\Calculator\app\src\main\AndroidManifest.xml:12:9-21:20
 	android:label
-		ADDED from D:\App_Android\Calculator\app\src\main\AndroidManifest.xml:15:13-45
+		ADDED from D:\App_Android\Calculator\app\src\main\AndroidManifest.xml:14:13-45
 	android:theme
-		ADDED from D:\App_Android\Calculator\app\src\main\AndroidManifest.xml:16:13-56
+		ADDED from D:\App_Android\Calculator\app\src\main\AndroidManifest.xml:15:13-56
 	android:name
-		ADDED from D:\App_Android\Calculator\app\src\main\AndroidManifest.xml:14:13-41
+		ADDED from D:\App_Android\Calculator\app\src\main\AndroidManifest.xml:13:13-41
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from D:\App_Android\Calculator\app\src\main\AndroidManifest.xml:17:13-21:29
+ADDED from D:\App_Android\Calculator\app\src\main\AndroidManifest.xml:16:13-20:29
 action#android.intent.action.MAIN
-ADDED from D:\App_Android\Calculator\app\src\main\AndroidManifest.xml:18:17-69
+ADDED from D:\App_Android\Calculator\app\src\main\AndroidManifest.xml:17:17-69
 	android:name
-		ADDED from D:\App_Android\Calculator\app\src\main\AndroidManifest.xml:18:25-66
+		ADDED from D:\App_Android\Calculator\app\src\main\AndroidManifest.xml:17:25-66
 category#android.intent.category.LAUNCHER
-ADDED from D:\App_Android\Calculator\app\src\main\AndroidManifest.xml:20:17-77
+ADDED from D:\App_Android\Calculator\app\src\main\AndroidManifest.xml:19:17-77
 	android:name
-		ADDED from D:\App_Android\Calculator\app\src\main\AndroidManifest.xml:20:27-74
+		ADDED from D:\App_Android\Calculator\app\src\main\AndroidManifest.xml:19:27-74
 uses-sdk
 INJECTED from D:\App_Android\Calculator\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from D:\App_Android\Calculator\app\src\main\AndroidManifest.xml

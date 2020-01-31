@@ -3,19 +3,16 @@ package com.trongtrung.calculator.ui;
 import android.content.res.Configuration;
 import android.graphics.Point;
 import android.os.Bundle;
-import android.view.ContextMenu;
 import android.view.Display;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
-import android.widget.CompoundButton;
 import android.widget.GridView;
 import android.widget.RadioButton;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
 import com.trongtrung.calculator.GeneralArray;
@@ -101,8 +98,6 @@ public class ProgrammerFragment extends Fragment {
         octResult = root.findViewById(R.id.oct_result);
         binRadioButton = root.findViewById(R.id.BIN);
         binResult = root.findViewById(R.id.bin_result);
-
-        bitwiseButton = root.findViewById(R.id.bitwise_button);
 
         keyboard = root.findViewById(R.id.program_keyboard);
     }

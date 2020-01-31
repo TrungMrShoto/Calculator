@@ -34,9 +34,9 @@ public class StandardFragment extends Fragment {
         initialize();
 
         if (root.getResources().getConfiguration().orientation == Configuration.ORIENTATION_LANDSCAPE)
-            createKeyboardHorizontal(size.y*15f/1080);
+            createKeyboardHorizontal(size.y*18f/1080);
         else
-            createKeyboardVertical(size.y*20f/1776);
+            createKeyboardVertical(size.y*25f/1776);
         return root;
     }
 
