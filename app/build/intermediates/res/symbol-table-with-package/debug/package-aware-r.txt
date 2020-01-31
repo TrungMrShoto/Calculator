@@ -1268,8 +1268,6 @@ id hex_result
 id home
 id homeAsUp
 id horizontalScrollView
-id horizontalScrollView2
-id horizontalScrollView3
 id horizontalScrollView4
 id icon
 id icon_group
@@ -1333,6 +1331,7 @@ id percent
 id pin
 id program_keyboard
 id programmer_input
+id programmer_result
 id progress_circular
 id progress_horizontal
 id radio

@@ -31,5 +31,11 @@ public class GeneralCharacter {
     public static final String LN = "ln";
     public static final String LOG = "log";
     public static final String EXP = "\uD835\uDC52";
-    public static final String INVERVE = "1/\uD835\uDC65";
+    public static final String INVERT = "1/\uD835\uDC65";
+
+    public static final String NOT = "NOT";
+    public static final String AND = "AND";
+    public static final String OR = "OR";
+    public static final String XOR = "XOR";
+    public static final String XNOR = "XNOR";
 }

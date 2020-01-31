@@ -154,6 +154,7 @@ public class ConverterFragment extends Fragment {
                 String input = inputField.getText().toString();
                 String inputValue;
                 int numOfDigit = 0;
+
                 if (input.contains(GeneralCharacter.POINT))
                     numOfDigit+=1;
 
@@ -183,7 +184,6 @@ public class ConverterFragment extends Fragment {
                                 inputValue = input;
                                 break;
                             }
-
                         }
                         else {
                             inputValue = input;

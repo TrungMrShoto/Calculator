@@ -49,9 +49,100 @@ public class GeneralArray {
 
     private GeneralArray(){}
 
+
+    private static void initialStandardHorizontal(){
+        listOfStandardHorizontal = new ArrayList<>();
+        Element[] key = {
+                new Element(GeneralCharacter.SHIFT, R.color.c2),
+                new Element(GeneralCharacter.HYP, R.color.c2),
+                new Element(GeneralCharacter.RAD, R.color.c2),
+                new Element(GeneralCharacter.SQUARE, R.color.c2),
+                new Element("7", R.color.c3),
+                new Element("8", R.color.c3),
+                new Element("9", R.color.c3),
+                new Element(GeneralCharacter.CE, R.color.c2),
+                new Element(GeneralCharacter.DEL, R.color.c2),
+                new Element(GeneralCharacter.SIN, R.color.c2),
+                new Element(GeneralCharacter.COS, R.color.c2),
+                new Element(GeneralCharacter.TAN, R.color.c2),
+                new Element(GeneralCharacter.ROOT, R.color.c2),
+                new Element("4", R.color.c3),
+                new Element("5", R.color.c3),
+                new Element("6", R.color.c3),
+                new Element(GeneralCharacter.MUL, R.color.c2),
+                new Element(GeneralCharacter.DIV, R.color.c2),
+                new Element(GeneralCharacter.LN, R.color.c2),
+                new Element(GeneralCharacter.LOG, R.color.c2),
+                new Element(GeneralCharacter.INVERT, R.color.c2),
+                new Element(GeneralCharacter.EXP, R.color.c2),
+                new Element("1", R.color.c3),
+                new Element("2", R.color.c3),
+                new Element("3", R.color.c3),
+                new Element(GeneralCharacter.ADD, R.color.c2),
+                new Element(GeneralCharacter.SUB, R.color.c2),
+                new Element(GeneralCharacter.SPACE,R.color.c2),
+                new Element(GeneralCharacter.LEFT_PARENTHESIS, R.color.c2),
+                new Element(GeneralCharacter.RIGHT_PARENTHESIS, R.color.c2),
+                new Element(GeneralCharacter.MOD, R.color.c2),
+                new Element(GeneralCharacter.ADD_AND_SUB, R.color.c3),
+                new Element("0", R.color.c3),
+                new Element(GeneralCharacter.POINT,R.color.c3),
+                new Element(GeneralCharacter.ANS, R.color.c2),
+                new Element(GeneralCharacter.EQUAL, R.color.c1)
+        };
+        listOfStandardHorizontal = Arrays.asList(key);
+    }
+    private static void initialStandardVertical(){
+        listOfStandardVertical = new ArrayList<>();
+        Element[] key = {
+                new Element(GeneralCharacter.SHIFT, R.color.c2),
+                new Element(GeneralCharacter.HYP, R.color.c2),
+                new Element(GeneralCharacter.RAD, R.color.c2),
+                new Element(GeneralCharacter.SQUARE, R.color.c2),
+                new Element(GeneralCharacter.ROOT, R.color.c2),
+                new Element(GeneralCharacter.SIN, R.color.c2),
+                new Element(GeneralCharacter.COS, R.color.c2),
+                new Element(GeneralCharacter.TAN, R.color.c2),
+                new Element(GeneralCharacter.LEFT_PARENTHESIS, R.color.c2),
+                new Element(GeneralCharacter.RIGHT_PARENTHESIS, R.color.c2),
+                new Element(GeneralCharacter.LN, R.color.c2),
+                new Element(GeneralCharacter.LOG, R.color.c2),
+                new Element(GeneralCharacter.INVERT, R.color.c2),
+                new Element(GeneralCharacter.EXP, R.color.c2),
+                new Element(GeneralCharacter.MOD, R.color.c2),
+                new Element("7", R.color.c3),
+                new Element("8", R.color.c3),
+                new Element("9", R.color.c3),
+                new Element(GeneralCharacter.CE, R.color.c2),
+                new Element(GeneralCharacter.DEL, R.color.c2),
+                new Element("4", R.color.c3),
+                new Element("5", R.color.c3),
+                new Element("6", R.color.c3),
+                new Element(GeneralCharacter.MUL, R.color.c2),
+                new Element(GeneralCharacter.DIV, R.color.c2),
+                new Element("1", R.color.c3),
+                new Element("2", R.color.c3),
+                new Element("3", R.color.c3),
+                new Element(GeneralCharacter.ADD, R.color.c2),
+                new Element(GeneralCharacter.SUB, R.color.c2),
+                new Element(GeneralCharacter.ADD_AND_SUB, R.color.c3),
+                new Element("0", R.color.c3),
+                new Element(GeneralCharacter.POINT,R.color.c3),
+                new Element(GeneralCharacter.ANS, R.color.c2),
+                new Element(GeneralCharacter.EQUAL, R.color.c1)
+
+        };
+        listOfStandardVertical = Arrays.asList(key);
+    }
+
     private static void initialProgrammerVertical(){
         listOfProgrammerVertical = new ArrayList<>();
         Element[] key = {
+                new Element(GeneralCharacter.NOT, R.color.c2),
+                new Element(GeneralCharacter.AND, R.color.c2),
+                new Element(GeneralCharacter.OR, R.color.c2),
+                new Element(GeneralCharacter.XOR, R.color.c2),
+                new Element(GeneralCharacter.XNOR, R.color.c2),
                 new Element("A", R.color.c2),
                 new Element("B", R.color.c2),
                 new Element("C", R.color.c2),
@@ -79,130 +170,50 @@ public class GeneralArray {
                 new Element(GeneralCharacter.SUB, R.color.c2),
                 new Element(GeneralCharacter.ADD_AND_SUB, R.color.c3),
                 new Element("0", R.color.c3),
-                new Element(GeneralCharacter.SPACE,R.color.c3),
+                new Element(GeneralCharacter.POINT,R.color.c3),
                 new Element(GeneralCharacter.ANS, R.color.c2),
                 new Element(GeneralCharacter.EQUAL, R.color.c1)
 
         };
         listOfProgrammerVertical = Arrays.asList(key);
     }
-    private static void initialStandardHorizontal(){
-        listOfStandardHorizontal = new ArrayList<>();
-        Element[] key = {
-                new Element("7", R.color.c3),
-                new Element("8", R.color.c3),
-                new Element("9", R.color.c3),
-                new Element(GeneralCharacter.CE, R.color.c2),
-                new Element(GeneralCharacter.DEL, R.color.c2),
-                new Element(GeneralCharacter.SHIFT, R.color.c2),
-                new Element(GeneralCharacter.HYP, R.color.c2),
-                new Element(GeneralCharacter.RAD, R.color.c2),
-                new Element(GeneralCharacter.SQUARE, R.color.c2),
-                new Element("4", R.color.c3),
-                new Element("5", R.color.c3),
-                new Element("6", R.color.c3),
-                new Element(GeneralCharacter.MUL, R.color.c2),
-                new Element(GeneralCharacter.DIV, R.color.c2),
-                new Element(GeneralCharacter.SIN, R.color.c2),
-                new Element(GeneralCharacter.COS, R.color.c2),
-                new Element(GeneralCharacter.TAN, R.color.c2),
-                new Element(GeneralCharacter.ROOT, R.color.c2),
-                new Element("1", R.color.c3),
-                new Element("2", R.color.c3),
-                new Element("3", R.color.c3),
-                new Element(GeneralCharacter.ADD, R.color.c2),
-                new Element(GeneralCharacter.SUB, R.color.c2),
-                new Element(GeneralCharacter.LN, R.color.c2),
-                new Element(GeneralCharacter.LOG, R.color.c2),
-                new Element(GeneralCharacter.INVERVE, R.color.c2),
-                new Element(GeneralCharacter.EXP, R.color.c2),
-                new Element(GeneralCharacter.ADD_AND_SUB, R.color.c3),
-                new Element("0", R.color.c3),
-                new Element(GeneralCharacter.POINT,R.color.c3),
-                new Element(GeneralCharacter.ANS, R.color.c2),
-                new Element(GeneralCharacter.EQUAL, R.color.c1),
-                new Element(GeneralCharacter.LEFT_PARENTHESIS, R.color.c2),
-                new Element(GeneralCharacter.RIGHT_PARENTHESIS, R.color.c2),
-                new Element(GeneralCharacter.MOD, R.color.c2),
-                new Element(GeneralCharacter.SPACE,R.color.c2)
-        };
-        listOfStandardHorizontal = Arrays.asList(key);
-    }
-    private static void initialStandardVertical(){
-        listOfStandardVertical = new ArrayList<>();
-        Element[] key = {
-                new Element(GeneralCharacter.SHIFT, R.color.c2),
-                new Element(GeneralCharacter.HYP, R.color.c2),
-                new Element(GeneralCharacter.RAD, R.color.c2),
-                new Element(GeneralCharacter.SQUARE, R.color.c2),
-                new Element(GeneralCharacter.ROOT, R.color.c2),
-                new Element(GeneralCharacter.SIN, R.color.c2),
-                new Element(GeneralCharacter.COS, R.color.c2),
-                new Element(GeneralCharacter.TAN, R.color.c2),
-                new Element(GeneralCharacter.LEFT_PARENTHESIS, R.color.c2),
-                new Element(GeneralCharacter.RIGHT_PARENTHESIS, R.color.c2),
-                new Element(GeneralCharacter.LN, R.color.c2),
-                new Element(GeneralCharacter.LOG, R.color.c2),
-                new Element(GeneralCharacter.INVERVE, R.color.c2),
-                new Element(GeneralCharacter.EXP, R.color.c2),
-                new Element(GeneralCharacter.MOD, R.color.c2),
-                new Element("7", R.color.c3),
-                new Element("8", R.color.c3),
-                new Element("9", R.color.c3),
-                new Element(GeneralCharacter.CE, R.color.c2),
-                new Element(GeneralCharacter.DEL, R.color.c2),
-                new Element("4", R.color.c3),
-                new Element("5", R.color.c3),
-                new Element("6", R.color.c3),
-                new Element(GeneralCharacter.MUL, R.color.c2),
-                new Element(GeneralCharacter.DIV, R.color.c2),
-                new Element("1", R.color.c3),
-                new Element("2", R.color.c3),
-                new Element("3", R.color.c3),
-                new Element(GeneralCharacter.ADD, R.color.c2),
-                new Element(GeneralCharacter.SUB, R.color.c2),
-                new Element(GeneralCharacter.ADD_AND_SUB, R.color.c3),
-                new Element("0", R.color.c3),
-                new Element(GeneralCharacter.POINT,R.color.c3),
-                new Element(GeneralCharacter.ANS, R.color.c2),
-                new Element(GeneralCharacter.EQUAL, R.color.c1)
-
-        };
-        listOfStandardVertical = Arrays.asList(key);
-    }
     private static void initialProgrammerHorizontal() {
         listOfProgrammerHorizontal = new ArrayList<>();
         Element[] key = {
-                new Element("A", R.color.c2),
-                new Element("B", R.color.c2),
-                new Element("C", R.color.c2),
+                new Element(GeneralCharacter.NOT, R.color.c2),
+                new Element(GeneralCharacter.AND, R.color.c2),
+                new Element(GeneralCharacter.OR, R.color.c2),
+                new Element(GeneralCharacter.XOR, R.color.c2),
                 new Element("7", R.color.c3),
                 new Element("8", R.color.c3),
                 new Element("9", R.color.c3),
                 new Element(GeneralCharacter.CE, R.color.c2),
                 new Element(GeneralCharacter.DEL, R.color.c2),
-                new Element("D", R.color.c2),
-                new Element("E", R.color.c2),
-                new Element("F", R.color.c2),
+                new Element(GeneralCharacter.XNOR, R.color.c2),
+                new Element(GeneralCharacter.LEFT_PARENTHESIS, R.color.c2),
+                new Element(GeneralCharacter.RIGHT_PARENTHESIS, R.color.c2),
+                new Element(GeneralCharacter.MOD, R.color.c2),
                 new Element("4", R.color.c3),
                 new Element("5", R.color.c3),
                 new Element("6", R.color.c3),
                 new Element(GeneralCharacter.MUL, R.color.c2),
                 new Element(GeneralCharacter.DIV, R.color.c2),
-                new Element(GeneralCharacter.LEFT_PARENTHESIS, R.color.c2),
-                new Element(GeneralCharacter.RIGHT_PARENTHESIS, R.color.c2),
-                new Element(GeneralCharacter.MOD, R.color.c2),
+                new Element(GeneralCharacter.SPACE, R.color.c2),
+                new Element("A", R.color.c2),
+                new Element("B", R.color.c2),
+                new Element("C", R.color.c2),
                 new Element("1", R.color.c3),
                 new Element("2", R.color.c3),
                 new Element("3", R.color.c3),
                 new Element(GeneralCharacter.ADD, R.color.c2),
                 new Element(GeneralCharacter.SUB, R.color.c2),
                 new Element(GeneralCharacter.SPACE, R.color.c2),
-                new Element(GeneralCharacter.SPACE, R.color.c2),
-                new Element(GeneralCharacter.SPACE, R.color.c2),
+                new Element("D", R.color.c2),
+                new Element("E", R.color.c2),
+                new Element("F", R.color.c2),
                 new Element(GeneralCharacter.ADD_AND_SUB, R.color.c3),
                 new Element("0", R.color.c3),
-                new Element(GeneralCharacter.SPACE, R.color.c3),
+                new Element(GeneralCharacter.POINT, R.color.c3),
                 new Element(GeneralCharacter.ANS, R.color.c2),
                 new Element(GeneralCharacter.EQUAL, R.color.c1)
         };
