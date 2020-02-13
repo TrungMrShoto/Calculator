@@ -4,7 +4,7 @@ ADDED from D:\App_Android\Calculator\app\src\main\AndroidManifest.xml:2:1-24:12
 INJECTED from D:\App_Android\Calculator\app\src\main\AndroidManifest.xml:2:1-24:12
 INJECTED from D:\App_Android\Calculator\app\src\main\AndroidManifest.xml:2:1-24:12
 INJECTED from D:\App_Android\Calculator\app\src\main\AndroidManifest.xml:2:1-24:12
-MERGED from [androidx.navigation:navigation-ui:2.0.0] C:\Users\dell\.gradle\caches\transforms-2\files-2.1\c4789b08f6c9dcf99266cfd8e4bc0c4e\jetified-navigation-ui-2.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.navigation:navigation-ui:2.0.0] C:\Users\dell\.gradle\caches\transforms-2\files-2.1\4d35337445cf9cffdd50df089faee225\jetified-navigation-ui-2.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [com.google.android.material:material:1.0.0] C:\Users\dell\.gradle\caches\transforms-2\files-2.1\2946ca0ea6c89dab7d7d9fbc18e54292\material-1.0.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.appcompat:appcompat:1.1.0] C:\Users\dell\.gradle\caches\transforms-2\files-2.1\d74b5b498b35fd5cb32d0a6997bb1d3d\appcompat-1.1.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.legacy:legacy-support-v4:1.0.0] C:\Users\dell\.gradle\caches\transforms-2\files-2.1\47fc3950c814b04977735368112c37af\legacy-support-v4-1.0.0\AndroidManifest.xml:17:1-22:12
@@ -114,8 +114,8 @@ uses-sdk
 INJECTED from D:\App_Android\Calculator\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from D:\App_Android\Calculator\app\src\main\AndroidManifest.xml
 INJECTED from D:\App_Android\Calculator\app\src\main\AndroidManifest.xml
-MERGED from [androidx.navigation:navigation-ui:2.0.0] C:\Users\dell\.gradle\caches\transforms-2\files-2.1\c4789b08f6c9dcf99266cfd8e4bc0c4e\jetified-navigation-ui-2.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.navigation:navigation-ui:2.0.0] C:\Users\dell\.gradle\caches\transforms-2\files-2.1\c4789b08f6c9dcf99266cfd8e4bc0c4e\jetified-navigation-ui-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.navigation:navigation-ui:2.0.0] C:\Users\dell\.gradle\caches\transforms-2\files-2.1\4d35337445cf9cffdd50df089faee225\jetified-navigation-ui-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.navigation:navigation-ui:2.0.0] C:\Users\dell\.gradle\caches\transforms-2\files-2.1\4d35337445cf9cffdd50df089faee225\jetified-navigation-ui-2.0.0\AndroidManifest.xml:20:5-44
 MERGED from [com.google.android.material:material:1.0.0] C:\Users\dell\.gradle\caches\transforms-2\files-2.1\2946ca0ea6c89dab7d7d9fbc18e54292\material-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [com.google.android.material:material:1.0.0] C:\Users\dell\.gradle\caches\transforms-2\files-2.1\2946ca0ea6c89dab7d7d9fbc18e54292\material-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.appcompat:appcompat:1.1.0] C:\Users\dell\.gradle\caches\transforms-2\files-2.1\d74b5b498b35fd5cb32d0a6997bb1d3d\appcompat-1.1.0\AndroidManifest.xml:20:5-22:41

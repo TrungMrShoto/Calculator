@@ -3,18 +3,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     tools:showIn="navigation_view">
 
-    <item android:title="@string/app_name">
-        <menu>
-            <item
-                android:id="@+id/nav_standard"
-                android:icon="@drawable/ic_standard"
-                android:title="@string/menu_standard" />
-            <item
-                android:id="@+id/nav_programmer"
-                android:icon="@drawable/ic_code"
-                android:title="@string/menu_programmer" />
-        </menu>
-    </item>
+    <item
+        android:id="@+id/nav_standard"
+        android:icon="@drawable/ic_standard"
+        android:title="@string/menu_calculator" />
 
     <item
         android:id="@+id/nav_converter"

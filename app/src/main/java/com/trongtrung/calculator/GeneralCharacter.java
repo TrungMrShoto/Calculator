@@ -17,7 +17,8 @@ public class GeneralCharacter {
     public static final String SUB = "–";
     public static final String MUL = "×";
     public static final String DIV = "÷";
-    public static final String MOD = "%";
+    public static final String MOD = "MOD";
+    public static final String MOD2 = "%";
     public static final String SHIFT = "S";
     //public static final String DEG = "DEG";
     public static final String RAD = "RAD";

@@ -74,9 +74,9 @@ public class ConverterFragment extends Fragment {
         initializeSpinner();
 
         if (root.getResources().getConfiguration().orientation == Configuration.ORIENTATION_LANDSCAPE)
-            initializeKeyboardHorizontal(size.y * 14.5f / (1080));
+            initializeKeyboardHorizontal(size.y * 14.5f / (1080),23);
         else
-            initializeKeyboardVertical(size.y * 20f / 1776);
+            initializeKeyboardVertical(size.y * 20f / 1776,34);
 
         updateResult(inputDefault);
 
@@ -275,17 +275,17 @@ public class ConverterFragment extends Fragment {
 
     }
 
-    private void initializeKeyboardVertical(float textSize)
+    private void initializeKeyboardVertical(float textSize, int paddingVertical)
     {
         KeyboardAdapter adapter = new KeyboardAdapter(getActivity(),
-                GeneralArray.getListOfConverterSub(), R.layout.key_layout, textSize);
+                GeneralArray.getListOfConverterSub(), R.layout.key_layout, textSize,paddingVertical);
         keyboard.setAdapter(adapter);
     }
 
-    private void initializeKeyboardHorizontal(float textSize)
+    private void initializeKeyboardHorizontal(float textSize, int paddingVertical)
     {
         KeyboardAdapter adapter = new KeyboardAdapter(getActivity(),
-                GeneralArray.getListOfConverterSubHorizontal(), R.layout.key_layout, textSize);
+                GeneralArray.getListOfConverterSubHorizontal(), R.layout.key_layout, textSize,paddingVertical);
         keyboard.setAdapter(adapter);
     }
 

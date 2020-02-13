@@ -5,34 +5,37 @@
     android:layout_height="match_parent">
 
     <LinearLayout
-        android:gravity="end"
+        android:id="@+id/linearLayout"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:gravity="end"
         android:orientation="vertical"
-        app:layout_constraintBottom_toTopOf="@+id/converter_keyboard"
+        app:layout_constraintBottom_toTopOf="@+id/guideline63"
         app:layout_constraintEnd_toStartOf="@+id/guideline62"
         app:layout_constraintStart_toStartOf="@+id/guideline61"
         app:layout_constraintTop_toTopOf="parent">
+
         <Spinner
             android:id="@+id/converter_choice"
             style="@android:style/Widget.Holo.Light.Spinner"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content" />
+
         <TextView
-            android:layout_marginTop="5dp"
             android:id="@+id/input_converter"
             android:layout_width="fill_parent"
-            android:paddingEnd="@dimen/padding_TextView"
-            android:paddingStart="@dimen/padding_TextView"
             android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/text_view_border"
             android:maxLines="1"
+            android:paddingStart="@dimen/padding_TextView"
+            android:paddingEnd="@dimen/padding_TextView"
             android:text="@string/default_value"
             android:textAlignment="textEnd"
             android:textColor="#000000"
             android:textSize="40sp"
-            android:textStyle="bold"
-            android:background="@drawable/text_view_border"
-            />
+            android:textStyle="bold" />
+
         <Spinner
             android:id="@+id/input_converter_unit"
             android:layout_width="wrap_content"
@@ -40,12 +43,13 @@
             android:textAlignment="textEnd" />
 
         <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             android:layout_marginBottom="10dp"
             android:gravity="center"
-            android:orientation="horizontal"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content">
+            android:orientation="horizontal">
+
             <ImageButton
                 android:id="@+id/exchangeUnit"
                 android:layout_width="150dp"
@@ -64,19 +68,19 @@
             android:id="@+id/output_converter"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
+            android:background="@drawable/text_view_border"
             android:ellipsize="marquee"
             android:focusable="true"
             android:focusableInTouchMode="true"
             android:freezesText="true"
+            android:paddingStart="@dimen/padding_TextView"
+            android:paddingEnd="@dimen/padding_TextView"
             android:scrollbars="vertical"
             android:singleLine="true"
             android:text="@string/default_value"
             android:textAlignment="textEnd"
             android:textColor="#000000"
-            android:textSize="35sp"
-            android:background="@drawable/text_view_border"
-            android:paddingStart="@dimen/padding_TextView"
-            android:paddingEnd="@dimen/padding_TextView" />
+            android:textSize="35sp" />
 
         <Spinner
             android:id="@+id/output_converter_unit"
@@ -84,15 +88,6 @@
             android:layout_height="wrap_content"
             android:textAlignment="textEnd" />
     </LinearLayout>
-
-
-
-
-
-
-
-
-
 
     <GridView
         android:id="@+id/converter_keyboard"
@@ -107,7 +102,8 @@
         android:verticalSpacing="2dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline63" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline61"
@@ -122,4 +118,12 @@
         android:layout_height="wrap_content"
         android:orientation="vertical"
         app:layout_constraintGuide_percent="0.97" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline63"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.5" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
