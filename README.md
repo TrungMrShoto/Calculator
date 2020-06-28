@@ -10,6 +10,6 @@ Calculator is my application about the mathematical field. This app helps everyo
 If you want to exchange some problem about my app or the code, feel free to contact me at :
 
 - Facebook : [Trọng Trung](https://www.facebook.com/TrungShotokun)
-- Gmail : trung.nguyen.shotokun@gmail.com
+- Gmail : trung.nguyen.trong2855@gmail.com
 
 I will contact you shortly.
